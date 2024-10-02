@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/get-global/static/css/main.f3ea2a48.css",
+    "main.js": "/get-global/static/js/main.07ddfeae.js",
+    "static/media/fonnts.com-Swear-Text-Light.otf": "/get-global/static/media/fonnts.com-Swear-Text-Light.4355bc23f14c46732af0.otf",
+    "static/media/fonnts.com-Swear-Text-Medium.otf": "/get-global/static/media/fonnts.com-Swear-Text-Medium.9145a54b83bb19224982.otf",
+    "index.html": "/get-global/index.html",
+    "main.f3ea2a48.css.map": "/get-global/static/css/main.f3ea2a48.css.map",
+    "main.07ddfeae.js.map": "/get-global/static/js/main.07ddfeae.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f3ea2a48.css",
+    "static/js/main.07ddfeae.js"
+  ]
+}
