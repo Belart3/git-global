@@ -2,6 +2,7 @@
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
+    "./public/index.html",
   ],
   theme: {
     extend: {
@@ -9,6 +10,7 @@ module.exports = {
         'BL100': '#B3BCC5',
         'BL500': '#001F3D',
         'PE500': '#F8DCBF',
+        'B100': '#B7B7B7',
         'B300': '#707070',
         'B400': '#404040',
         'B500': '#101010',
@@ -71,6 +73,10 @@ module.exports = {
         '32': '32px',
         '64': '64px',
       },
+      backgroundImage: {
+        'review-section': "url(img/review-image.png)",
+        'immigration-section': "url(img/immigration.png)",
+      }
     },
   },
   plugins: [],

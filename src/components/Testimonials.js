@@ -2,7 +2,8 @@ const Testimonials = ({title, testimony, author}) => {
     return (  
         <div className="
         border border-BL100 
-        col-span-6 col-start-1 even:col-start-2 
+        col-span-6 col-start-1 
+        //even:col-start-2 
         xl:row-span-5 xl:col-span-1 xl:even:row-start-2 xl:row-start-1
         py-10 px-6">
 
@@ -10,8 +11,12 @@ const Testimonials = ({title, testimony, author}) => {
                 {title}
             </h4>
 
-            <div className="flex flex-row mb-8">
-
+            <div className="flex flex-row mb-8 gap-2">
+                <img src="images/green-star.svg" alt="" />
+                <img src="images/green-star.svg" alt="" />
+                <img src="images/green-star.svg" alt="" />
+                <img src="images/green-star.svg" alt="" />
+                <img src="images/green-star.svg" alt="" />
             </div>
 
             <p className="text-B300 text-base mb-10 ibm-plex-sans-regular">

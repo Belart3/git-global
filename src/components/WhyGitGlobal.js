@@ -4,7 +4,7 @@ import SectionHeading from "./SectionHeading";
 
 const WhyGitGlobal = () => {
     return (
-        <section className="flex flex-col gap-16 lg:gap-10 items-start justify-start px-4 md:px-8 lg:px-20 2xl:px-0 max-w-screen-2xl mx-auto mb-32">
+        <section className="flex flex-col gap-16 lg:gap-10 items-start justify-start mx-4 md:mx-8 lg:mx-20 2xl:px-0 max-w-screen-2xl 2xl:mx-auto mb-32">
             <SectionHeading title="Why choose GIT Global?" src="images/service.svg"/>
 
             <p className="swear-text-semibold italic text-5xl lg:text-64/64">

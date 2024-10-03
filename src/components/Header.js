@@ -6,7 +6,7 @@ const Header = () => {
     return ( 
         <header className="w-full">
             <Navbar />
-            <div className="flex flex-col md:flex-row items-center justify-between px-4 md:px-8 lg:px-20 w-full max-w-screen-2xl 2xl:px-0 mx-auto gap-y-10 xl:gap-x-20 pt-28">
+            <div className="flex flex-col md:flex-row items-center justify-between mx-4 md:mx-8 lg:mx-20 max-w-screen-2xl 2xl:px-0 2xl:mx-auto gap-y-10 xl:gap-x-20 pt-28">
                 
                 <div className=" space-y-8 w-full md:w-1/2 lg:w-48">
                     <h2 className="text-6xl font-normal text-B500 swear-text">
