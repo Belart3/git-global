@@ -2,21 +2,22 @@ const Testimonials = ({title, testimony, author}) => {
     return (  
         <div className="
         border border-BL100 
-        col-span-6 col-start-1 
-        //even:col-start-2 
-        xl:row-span-5 xl:col-span-1 xl:even:row-start-2 xl:row-start-1
+        w-90 max-w-xl
+        self-start even:self-end
+        lg:w-full
+        lg:row-span-5 lg:col-span-1 lg:even:row-start-2 lg:row-start-1
         py-10 px-6">
 
             <h4 className="mb-4 ibm-plex-sans-bold text-xl">
                 {title}
             </h4>
 
-            <div className="flex flex-row mb-8 gap-2">
-                <img src="images/green-star.svg" alt="" />
-                <img src="images/green-star.svg" alt="" />
-                <img src="images/green-star.svg" alt="" />
-                <img src="images/green-star.svg" alt="" />
-                <img src="images/green-star.svg" alt="" />
+            <div className="flex flex-row mb-8">
+                <img src="images/green-star.svg" alt="" className="size-7"/>
+                <img src="images/green-star.svg" alt="" className="size-7"/>
+                <img src="images/green-star.svg" alt="" className="size-7"/>
+                <img src="images/green-star.svg" alt="" className="size-7"/>
+                <img src="images/green-star.svg" alt="" className="size-7"/>
             </div>
 
             <p className="text-B300 text-base mb-10 ibm-plex-sans-regular">
