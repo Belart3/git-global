@@ -20,7 +20,7 @@ const ProgressBar = () => {
     return (
       <div className="h-2 ">
         <div
-          className="h-full bg-PE500"
+          className="h-full bg-G500"
           style={{ width: `${scrollY}%` }}
         ></div>
       </div>

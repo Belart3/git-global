@@ -5,7 +5,7 @@ import { contactInfo } from "../data/FooterData";
 const Footer = () => {
     return (  
         <footer className="bg-BL500 ">
-            <div className="flex flex-col gap-10 lg:gap-0 lg:flex-row items-start justify-between max-w-screen-2xl mx-auto px-5 py-10 lg:px-20 lg:py-20 mt-20 lg:mt-15 2xl:px-0">
+            <div className="flex flex-col gap-10 lg:gap-0 lg:flex-row items-start justify-between max-w-screen-2xl mx-auto px-5 pb-32 !md:pb-36 py-10 lg:px-20 lg:pt-20 mt-20 lg:mt-15 2xl:px-0">
 
                 <div className="flex flex-col gap-8 w-full lg:w-2/12">
                     <ul className="flex flex-col items-start gap-5">

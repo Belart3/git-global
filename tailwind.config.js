@@ -61,8 +61,10 @@ module.exports = {
       },
       lineHeight: {
         '12': '12px',
+        '16': '16px',
         '20': '20px',
         '22': '22px',
+        '32': '32px',
         '24': '24px',
         '38': '38px',
         '60': '60px',
@@ -77,6 +79,8 @@ module.exports = {
       backgroundImage: {
         'review-section': "url(img/review-image.png)",
         'immigration-section': "url(img/immigration.png)",
+        'hero-1': "url(img/hero-image-1.png)",
+        'hero-2': "url(img/hero-image-2.png)",
       },
       boxShadow: {
         'progress': '0px -10px 40px 0px rgba(0, 0, 0, 0.20)',
