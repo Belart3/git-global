@@ -32,7 +32,7 @@ export default function AccordionUsage({question, answer}) {
         </AccordionSummary>
 
         <AccordionDetails
-        className='!py-0 text-B300 text-xl'
+        className='!py-0 text-B300 text-xl ibm-plex-sans-regular'
         >
           {answer}
         </AccordionDetails>

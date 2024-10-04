@@ -22,12 +22,8 @@ const Header = () => {
                 </div>
 
                 <div className="flex flex-row w-full max-w-600 h-400 sm:h-500 md:h-400 md:w-48 xl:h-700 justify-between">
-                    <div className="h-320 md:h-320 sm:h-420 xl:h-573  w-48 sm:min-w-250 md:min-w-120 max-w-290 relative">
-                        <img src="images/hero-image-1.png" alt="" className="h-full w-full"/>
-                    </div>
-                    <div className="h-320 md:h-320 sm:h-420 xl:h-573 w-48 sm:min-w-250 md:min-w-120 max-w-290 relative top-80">
-                        <img src="images/hero-image-2.png" alt="" className="h-full w-full"/>
-                    </div>
+                    <div className="h-320 md:h-320 sm:h-420 xl:h-573  w-48 sm:min-w-250 md:min-w-120 max-w-290 relative bg-hero-1 bg-top bg-cover bg-no-repeat"></div>
+                    <div className="h-320 md:h-320 sm:h-420 xl:h-573 w-48 sm:min-w-250 md:min-w-120 max-w-290 relative top-80 bg-hero-2 bg-bottom bg-cover bg-no-repeat"></div>
                 </div>
             </div>
         </header>
