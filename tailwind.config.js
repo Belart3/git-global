@@ -19,6 +19,7 @@ module.exports = {
       },
       width: {
         '45': '45%',
+        '90': '90%',
         '48': '48%',
         '250': '250px',
         '290': '290px',
@@ -76,6 +77,9 @@ module.exports = {
       backgroundImage: {
         'review-section': "url(img/review-image.png)",
         'immigration-section': "url(img/immigration.png)",
+      },
+      boxShadow: {
+        'progress': '0px -10px 40px 0px rgba(0, 0, 0, 0.20)',
       }
     },
   },
