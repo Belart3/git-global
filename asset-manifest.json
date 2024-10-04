@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/get-global/static/css/main.9688edeb.css",
-    "main.js": "/get-global/static/js/main.9b250eb7.js",
+    "main.css": "/get-global/static/css/main.818550e3.css",
+    "main.js": "/get-global/static/js/main.c6bc6c66.js",
     "static/media/review-image.png": "/get-global/static/media/review-image.295351fa0204d19b187d.png",
     "static/media/immigration.png": "/get-global/static/media/immigration.441e3bad75b2e0ab30c0.png",
     "static/media/fonnts.com-Swear-Text-Light.otf": "/get-global/static/media/fonnts.com-Swear-Text-Light.4355bc23f14c46732af0.otf",
     "static/media/fonnts.com-Swear-Text-Medium.otf": "/get-global/static/media/fonnts.com-Swear-Text-Medium.9145a54b83bb19224982.otf",
     "index.html": "/get-global/index.html",
-    "main.9688edeb.css.map": "/get-global/static/css/main.9688edeb.css.map",
-    "main.9b250eb7.js.map": "/get-global/static/js/main.9b250eb7.js.map"
+    "main.818550e3.css.map": "/get-global/static/css/main.818550e3.css.map",
+    "main.c6bc6c66.js.map": "/get-global/static/js/main.c6bc6c66.js.map"
   },
   "entrypoints": [
-    "static/css/main.9688edeb.css",
-    "static/js/main.9b250eb7.js"
+    "static/css/main.818550e3.css",
+    "static/js/main.c6bc6c66.js"
   ]
 }
