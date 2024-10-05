@@ -74,6 +74,7 @@ module.exports = {
         '12': '12px',
         '28': '28px',
         '32': '32px',
+        '60': '60px',
         '64': '64px',
       },
       backgroundImage: {
@@ -81,6 +82,7 @@ module.exports = {
         'immigration-section': "url(img/immigration.png)",
         'hero-1': "url(img/hero-image-1.png)",
         'hero-2': "url(img/hero-image-2.png)",
+        'news-1': "url(img/news-image-2.png)",
       },
       boxShadow: {
         'progress': '0px -10px 40px 0px rgba(0, 0, 0, 0.20)',

@@ -1,4 +1,4 @@
-const BtnBlue = ({title, src}) => {
+const BtnBlue = ({title}) => {
     return ( 
         <button className="border border-BL500 bg-BL500 hover:bg-BL500/75 p-4 flex  flex-row items-center justify-center space-x-3 cursor-pointer md:w-44  md:max-w-400 w-full sm:max-w-44 transition ease-in-out delay-75 group inline-flex">
             <p className="text-base/16 capitalize text-white ibm-plex-sans-regular">

@@ -1,36 +1,38 @@
 import './App.css';
-import FAQ from './components/FAQ';
 import Footer from './components/Footer';
-import Header from './components/Header';
-import HowItWorks from './components/HowItWorks';
-import NewsReport from './components/NewsReports';
-import ReviewSection from './components/ReviewSection';
-import WhyGitGlobal from './components/WhyGitGlobal';
 import CheckEligibility from './components/CheckEligibility';
+import Navbar from './components/Navbar';
+import Home from './pages/Home'
 import './index.css';
+import { BrowserRouter as Router, Route, Switch,  useLocation } from 'react-router-dom';
+import NewsPage from './pages/NewsPage';
+import React, { useEffect } from 'react';
+import ScrollToTop from './components/ScrollToTop';
+import ScrollToSection from './components/ScrollToSection';
+
 
 function App() {
+
   return (
-    <div className='w-full bg-Background'>
-      <Header />
-      <div id='review-section' className=' pt-20 lg:pt-24'>
-        <ReviewSection />
+    <Router>
+      <div className='w-full bg-Background'>
+        <Navbar />
+        <ScrollToTop />
+        <ScrollToSection />
+        <div>
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/news">
+              <NewsPage />
+            </Route>
+          </Switch>
+        </div>
+        <CheckEligibility />
+        <Footer />
       </div>
-      <div id='how-it-works' className=' pt-20 lg:pt-24'>
-        <HowItWorks />
-      </div>
-      <div id='why-git-global' className=' pt-20 lg:pt-24'>
-        <WhyGitGlobal />
-      </div>
-      <div id='news-report' className=' pt-20 lg:pt-24'>
-        <NewsReport />
-      </div>
-      <div id='FAQ' className=' pt-20 lg:pt-24'>
-        <FAQ />
-      </div>
-      <CheckEligibility />
-      <Footer />
-    </div>
+    </Router>
   );
 }
 

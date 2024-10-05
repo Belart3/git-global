@@ -31,7 +31,7 @@ export const footerDetail = [
 export const contactInfo = [
     {
         id: 1,
-        image: '/get-global/images/office.svg',
+        image: 'images/office.svg',
         text: '2 E. Benton St, Iowa City, IA, 52240'
     },
     {
