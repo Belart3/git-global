@@ -3,6 +3,7 @@ import NavLink from "./NavLink";
 import {linkcont} from "../data/NavLinks"
 import BtnBlue from "./BtnBlue";
 import React, { useState , useRef } from 'react';
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 const Navbar = () => {
 
@@ -15,9 +16,9 @@ const Navbar = () => {
     return ( 
         <nav className="flex flex-row justify-between items-center p-4 md:px-8 py-4 lg:px-20 max-w-screen-2xl 2xl:px-0 mx-auto fixed top-0 inset-x-0 z-50 bg-Background">
 
-            <a href="">
+            <Link to="/">
                 <Logo />
-            </a>
+            </Link>
 
             <ul className="hidden items-center justify-between md:flex space-x-10">
                     {linkcont.map((data) => (

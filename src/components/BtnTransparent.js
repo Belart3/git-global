@@ -1,4 +1,4 @@
-const BtnTransparent = ({title, src}) => {
+const BtnTransparent = ({title}) => {
     return ( 
         <button className="border border-BL500 bg-transparent  transition ease-in-out  hover:bg-BL500 text-B500 p-4 flex  flex-row items-center justify-center space-x-3 cursor-pointer w-full max-w-400 sm:max-w-48 group">
             <p className="text-base/16 capitalize ibm-plex-sans-regular group-hover:text-white">

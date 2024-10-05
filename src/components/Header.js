@@ -5,7 +5,6 @@ import Navbar from "./Navbar";
 const Header = () => {
     return ( 
         <header className="w-full">
-            <Navbar />
             <div className="flex flex-col md:flex-row items-center justify-between mx-4 md:mx-8 lg:mx-20 max-w-screen-2xl 2xl:px-0 2xl:mx-auto gap-y-10 xl:gap-x-20 pt-28">
                 
                 <div className=" space-y-8 w-full md:w-1/2 lg:w-48">
@@ -16,8 +15,8 @@ const Header = () => {
                         At GIT Global, we simplify the complexities of U.S. immigration to navigate your journey to the United States. Our experienced team is dedicated to guiding you through every step of the process.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-y-4 gap-x-4  justify-start items-center">
-                        <BtnBlue title="get started" src="images/arrow-right.svg"/>
-                        <BtnTransparent title="our services" src="images/arrow-down.svg"/>
+                        <BtnBlue title="get started"/>
+                        <BtnTransparent title="our services"/>
                     </div>
                 </div>
 
