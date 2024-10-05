@@ -13,7 +13,7 @@ import ScrollToSection from './components/ScrollToSection';
 function App() {
 
   return (
-    <Router>
+    <Router basename="/gits-global">
       <div className='w-full bg-Background'>
         <Navbar />
         <ScrollToTop />
