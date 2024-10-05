@@ -4,9 +4,8 @@ import CheckEligibility from './components/CheckEligibility';
 import Navbar from './components/Navbar';
 import Home from './pages/Home'
 import './index.css';
-import { BrowserRouter as Router, Route, Switch,  useLocation } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import NewsPage from './pages/NewsPage';
-import React, { useEffect } from 'react';
 import ScrollToTop from './components/ScrollToTop';
 import ScrollToSection from './components/ScrollToSection';
 
