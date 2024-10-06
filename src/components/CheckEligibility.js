@@ -24,26 +24,46 @@ const CheckEligibility = () => {
     }, []);
 
     return (  
-        <div className='bottom-0 fixed w-full bg-Background shadow-progress '>
+        <div 
+        className=
+            {`transform transition-all duration-500 ease-in-out animate__animated scroll-element 
+                bottom-0 fixed w-full bg-Background shadow-progress z-50 ${
+                showCheckEligibility
+                ? 'opacity-100 translate-y-0 animate__slideInUp'
+                : 'opacity-0 translate-y-4 animate__fadeOutDown'
+            }`}
+        >
             <ProgressBar />
             {showCheckEligibility ? (
                 <div className=
-                {`transform transition-all duration-500 ease-in-out bottom-0 w-full p-5 lg:py-6 lg:px-20 2xl:p-0 max-w-screen-2xl 2xl:mx-auto  animate__animated scroll-element flex-col ${
+                {`transform transition-all duration-500 ease-in-out bottom-0 w-full px-5 py-10px lg:py-4 lg:px-20 2xl:p-0 max-w-screen-2xl 2xl:mx-auto z-50  animate__animated scroll-element flex-col ${
                     showCheckEligibility
                     ? 'opacity-100 translate-y-0 animate__slideInUp'
                     : 'opacity-0 translate-y-4 animate__fadeOutDown'
                 }`}
                 >
                     <div className="flex flex-row w-full justify-between items-center">
-                        <div className="flex flex-col gap-4 lg:gap-6">
-                            <h5 className="swear-text text-B500 text-lg/20 lg:text-28/32">
+                        <div className="flex flex-col gap-4">
+                            <h5 className="swear-text-semibold font-semibold text-B500 text-base lg:text-2xl/28">
                                 Schedule your consultation today
                             </h5>
-                            <p className="text-B300 hidden lg:block text-lg lg:text-base ibm-plex-sans-regular">
+                            <p className="text-B300 hidden md:block lg:text-base ibm-plex-sans-regular">
                                 Unlimited support. Dedicated prepare consultants. Accuracy guaranteed.
                             </p>
                         </div>
-                        <BtnBlue title="check eligibility"/>
+                        <div className="max-w-52 min-w-40 sm:min-w-52">
+                            <button className="border border-BL500 bg-BL500 lg:hover:bg-BL500/75 p-4 flex  flex-row items-center justify-center space-x-3 cursor-pointer w-full transition ease-in-out delay-75 group inline-flex">
+                                <p className="text-base/16 capitalize text-white ibm-plex-sans-regular">
+                                check eligibility
+                                </p>
+                                <svg  className="size-6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g id="arrow-right-02">
+                                    <path id="Vector" d="M15.0001 17L20 12L15 7" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path id="Vector_2" d="M4 12H20" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
                     </div>
                 </div>
             ) : null}

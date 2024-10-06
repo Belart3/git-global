@@ -1,6 +1,5 @@
 import './App.css';
 import Footer from './components/Footer';
-import CheckEligibility from './components/CheckEligibility';
 import Navbar from './components/Navbar';
 import Home from './pages/Home'
 import './index.css';
@@ -13,7 +12,7 @@ import ScrollToSection from './components/ScrollToSection';
 function App() {
 
   return (
-    <Router basename="/gits-global">
+    <Router>
       <div className='w-full bg-Background'>
         <Navbar />
         <ScrollToTop />
@@ -28,7 +27,6 @@ function App() {
             </Route>
           </Switch>
         </div>
-        <CheckEligibility />
         <Footer />
       </div>
     </Router>
