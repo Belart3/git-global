@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/gits-global/static/css/main.e79397ff.css",
-    "main.js": "/gits-global/static/js/main.2c70d294.js",
+    "main.css": "/gits-global/static/css/main.2ea18b45.css",
+    "main.js": "/gits-global/static/js/main.b1d27660.js",
     "static/media/hero-image-1.png": "/gits-global/static/media/hero-image-1.b9d357cf4130b761c7f9.png",
     "static/media/review-image.png": "/gits-global/static/media/review-image.295351fa0204d19b187d.png",
     "static/media/hero-image-2.png": "/gits-global/static/media/hero-image-2.4a2fc18c42aeb7a29fa1.png",
@@ -10,11 +10,11 @@
     "static/media/fonnts.com-Swear-Text-Light.otf": "/gits-global/static/media/fonnts.com-Swear-Text-Light.4355bc23f14c46732af0.otf",
     "static/media/fonnts.com-Swear-Text-Medium.otf": "/gits-global/static/media/fonnts.com-Swear-Text-Medium.9145a54b83bb19224982.otf",
     "index.html": "/gits-global/index.html",
-    "main.e79397ff.css.map": "/gits-global/static/css/main.e79397ff.css.map",
-    "main.2c70d294.js.map": "/gits-global/static/js/main.2c70d294.js.map"
+    "main.2ea18b45.css.map": "/gits-global/static/css/main.2ea18b45.css.map",
+    "main.b1d27660.js.map": "/gits-global/static/js/main.b1d27660.js.map"
   },
   "entrypoints": [
-    "static/css/main.e79397ff.css",
-    "static/js/main.2c70d294.js"
+    "static/css/main.2ea18b45.css",
+    "static/js/main.b1d27660.js"
   ]
 }
