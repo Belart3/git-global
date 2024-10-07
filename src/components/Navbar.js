@@ -38,7 +38,7 @@ const Navbar = () => {
             {showDropDown ? (
                 <div className=
                     {`transform transition-all animate__faster ease-in-out animate__animated 
-                    absolute top-20 left-0 w-full h-80 bg-Background px-10 md:hidden py-10 
+                    absolute left-0 w-full h-80 bg-Background px-10 md:hidden py-10 top-16 
                         ${
                         showDropDown
                         ? 'opacity-100 sm:block animate__fadeIn'

@@ -98,6 +98,12 @@ html {
     src: url('./fonts/fonnts.com-Swear-Text-Light.otf') format('truetype'); /* or woff, woff2 */
     font-style: normal;
   }
+  
+  @font-face {
+    font-family: 'swearText-italic';
+    src: url('./fonts/fonnts.com-Swear-Text-Thin.otf') format('truetype'); /* or woff, woff2 */
+
+  }
 
   .swear-text {
     font-family: "swearText", sans-serif;
@@ -105,5 +111,9 @@ html {
 
   .swear-text-semibold {
     font-family: "swearText-semibold", sans-serif;
+  }
+
+  .swear-text-italic {
+    font-family: "swearText-italic", sans-serif;
   }
   

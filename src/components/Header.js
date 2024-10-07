@@ -1,6 +1,5 @@
 import BtnBlue from "./BtnBlue";
 import BtnTransparent from "./BtnTransparent";
-import Navbar from "./Navbar";
 
 const Header = () => {
     return ( 
@@ -9,7 +8,7 @@ const Header = () => {
                 
                 <div className=" space-y-8 w-full md:w-1/2 lg:w-48">
                     <h2 className="text-6xl font-normal text-B500 swear-text">
-                        The <br/> <span className='italic font-semibold text-B500 swear-text-semibold'>Simplified</span> <br/> American Journey
+                        The <br/> <span className='italic font-semibold text-B500 swear-text-italic'>Simplified</span> <br/> American Journey
                     </h2>
                     <p className="ibm-plex-sans-regular text-B400 text-lg/7">
                         At GIT Global, we simplify the complexities of U.S. immigration to navigate your journey to the United States. Our experienced team is dedicated to guiding you through every step of the process.

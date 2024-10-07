@@ -1,6 +1,5 @@
 import BtnBlue from "./BtnBlue";
 import BtnTransparent from "./BtnTransparent";
-import NavLink from "./NavLink";
 import { service } from "../data/Services";
 import Services from "./Services";
 

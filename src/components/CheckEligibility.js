@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import BtnBlue from './BtnBlue';
 import ProgressBar from './ProgressBar';
 
 const CheckEligibility = () => {
 
     const [showCheckEligibility, setShowCheckEligibility] = useState(false);
+    const [isRendered, setIsRendered] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -23,23 +23,35 @@ const CheckEligibility = () => {
         };
     }, []);
 
+    useEffect(() => {
+        if (showCheckEligibility) {
+            setIsRendered(true);
+        } else {
+            const timer = setTimeout(() => {
+                setIsRendered(false);
+            }, 500); 
+
+            return () => clearTimeout(timer); 
+        }
+    }, [showCheckEligibility]);
+
     return (  
         <div 
         className=
             {`transform transition-all duration-500 ease-in-out animate__animated scroll-element 
                 bottom-0 fixed w-full bg-Background shadow-progress z-50 ${
                 showCheckEligibility
-                ? 'opacity-100 translate-y-0 animate__slideInUp'
-                : 'opacity-0 translate-y-4 animate__fadeOutDown'
+                ? 'opacity-100 animate__slideInUp'
+                : 'opacity-0 animate__slideOutDown'
             }`}
         >
             <ProgressBar />
             {showCheckEligibility ? (
                 <div className=
-                {`transform transition-all duration-500 ease-in-out bottom-0 w-full px-5 py-10px lg:py-4 lg:px-20 2xl:p-0 max-w-screen-2xl 2xl:mx-auto z-50  animate__animated scroll-element flex-col ${
+                {`transform transition-all duration-500 ease-in-out bottom-0 w-full px-5 py-10px lg:py-4 lg:px-20 max-w-screen-2xl 2xl:mx-auto z-50  animate__animated scroll-element flex-col ${
                     showCheckEligibility
-                    ? 'opacity-100 translate-y-0 animate__slideInUp'
-                    : 'opacity-0 translate-y-4 animate__fadeOutDown'
+                    ? 'opacity-100 animate__slideInUp'
+                    : 'opacity-0 animate__slideOutDown'
                 }`}
                 >
                     <div className="flex flex-row w-full justify-between items-center">
