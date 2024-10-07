@@ -4,6 +4,7 @@ import HowItWorks from '../components/HowItWorks';
 import NewsReport from '../components/NewsReports';
 import ReviewSection from '../components/ReviewSection';
 import WhyGitGlobal from '../components/WhyGitGlobal'
+import CheckEligibility from '../components/CheckEligibility'
 
 const Home = () => {
     return (  
@@ -24,6 +25,7 @@ const Home = () => {
             <div id='FAQ' className=' pt-20 lg:pt-24'>
                 <FAQ />
             </div>
+            <CheckEligibility />
         </div>
     );
 }

@@ -14,13 +14,13 @@ const Navbar = () => {
         setShowDropDown(!showDropDown);
     };
     return ( 
-        <nav className="flex flex-row justify-between items-center p-4 md:px-8 py-4 lg:px-20 max-w-screen-2xl 2xl:px-0 mx-auto fixed top-0 inset-x-0 z-50 bg-Background">
+        <nav className="flex flex-row justify-between items-center px-4 md:px-8  lg:px-20 max-w-screen-2xl 2xl:px-0 mx-auto fixed top-0 inset-x-0 z-50 bg-Background h-16">
 
             <Link to="/">
                 <Logo />
             </Link>
 
-            <ul className="hidden items-center justify-between md:flex space-x-10">
+            <ul className="hidden items-center justify-center md:flex">
                     {linkcont.map((data) => (
                         <NavLink key={data.id} src={data.src} title={data.title}  href={data.href}/>
                     ))}
@@ -38,7 +38,7 @@ const Navbar = () => {
             {showDropDown ? (
                 <div className=
                     {`transform transition-all animate__faster ease-in-out animate__animated 
-                    absolute top-20 left-0 w-full h-80 bg-Background px-10 md:hidden py-10 
+                    absolute left-0 w-full h-80 bg-Background px-10 md:hidden py-10 top-16 
                         ${
                         showDropDown
                         ? 'opacity-100 sm:block animate__fadeIn'

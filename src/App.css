@@ -1,7 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 html {
   scroll-behavior: smooth;
 }
@@ -99,9 +95,14 @@ html {
   
   @font-face {
     font-family: 'swearText-semibold';
-    src: url('./fonts/fonnts.com-Swear-Text-Medium.otf') format('truetype'); /* or woff, woff2 */
-    font-weight: 600;
+    src: url('./fonts/fonnts.com-Swear-Text-Light.otf') format('truetype'); /* or woff, woff2 */
     font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'swearText-italic';
+    src: url('./fonts/fonnts.com-Swear-Text-Thin.otf') format('truetype'); /* or woff, woff2 */
+
   }
 
   .swear-text {
@@ -110,5 +111,9 @@ html {
 
   .swear-text-semibold {
     font-family: "swearText-semibold", sans-serif;
+  }
+
+  .swear-text-italic {
+    font-family: "swearText-italic", sans-serif;
   }
   

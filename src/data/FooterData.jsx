@@ -2,22 +2,22 @@ export const links = [
     {
         id: 1,
         title: 'home',
-        href: '#'
+        href: '/'
     },
     {
         id: 2,
         title: 'services',
-        href: '#'
+        href: '/#review-section'
     },
     {
         id: 3,
         title: 'how it works',
-        href: '#'
+        href: '/#how-it-works'
     },
     {
         id: 4,
         title: 'news & reports',
-        href: '#'
+        href: '/#news-report'
     },
 ]
 
@@ -32,16 +32,19 @@ export const contactInfo = [
     {
         id: 1,
         image: 'images/office.svg',
-        text: '2 E. Benton St, Iowa City, IA, 52240'
+        text: '2 E. Benton St, Iowa City, IA, 52240',
+        href: '',
     },
     {
         id: 2,
         image: 'images/call.svg',
-        text: '515-446-7074'
+        text: '515-446-7074',
+        href: 'tel:+15154467074',
     },
     {
         id: 3,
         image: 'images/mail.svg',
-        text: 'info@gitsiowa.com'
+        text: 'info@gitsiowa.com',
+        href: 'mailto:info@gitsiowa.com',
     },
 ]

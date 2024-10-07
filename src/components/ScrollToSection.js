@@ -6,13 +6,20 @@ function ScrollToSection() {
 
   useEffect(() => {
     
-    if (hash && hash !== '#/') {
-      const element = document.querySelector(hash);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
+    if (hash && hash.startsWith('#/')) {
+        const cleanHash = hash.replace('#/', '#'); // Convert '#/section' to '#section'
+        const element = document.querySelector(cleanHash);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      } else if (hash) {
+        // Handle regular hashes like '#section'
+        const element = document.querySelector(hash);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
       }
-    }
-  }, [hash]);
+    }, [hash]);
 
   return null;
 }

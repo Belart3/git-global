@@ -1,6 +1,5 @@
 import BtnBlue from "./BtnBlue";
 import BtnTransparent from "./BtnTransparent";
-import NavLink from "./NavLink";
 import { service } from "../data/Services";
 import Services from "./Services";
 
@@ -9,8 +8,14 @@ const ReviewSection = () => {
         <section className="grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-5 mb-16 gap-4 lg:gap-0 sm:mx-4 md:mx-8 lg:mx-20 max-w-screen-2xl 2xl:px-0 2xl:mx-auto bg-Background lg:mb-36 xl:h-1044">
           
             <div className="w-off-16  flex flex-col bg-PE500 place-self-start max-w-lg lg:max-w-none  lg:row-span-3 lg:order-2 lg:place-self-end lg:w-full">
-                <div className="bg-Background py-6 px-5 w-44">
-                    <NavLink title="our services" src="images/service.svg"/>
+                <div className="bg-Background w-fit p-4 lg:py-6 lg:px-10 ">
+                    {/* <NavLink title="our services" src="images/service.svg"/> */}
+                    <div className="flex flex-row items-center space-x-3">
+                        <img src="images/service.svg" alt="" className="size-8"/>
+                        <p className="capitalize swear-text text-28/38 lg:text-32/38 font-normal text-B500">
+                            our services
+                        </p>
+                    </div>
                 </div>
                 <div className="py-10 px-5 md:p-10 flex flex-col items-start justify-center gap-y-8 w-full">
                     <div className="flex flex-col gap-x-10 gap-y-10">
@@ -27,7 +32,7 @@ const ReviewSection = () => {
 
             <div className="flex flex-col w-off-16 sm:w-full sm:row-span-5 place-self-end sm:self-start max-w-lg lg:max-w-none lg:order-1">
                 <div className="h-96 lg:h-906 bg-review-section bg-top bg-no-repeat bg-cover"></div>
-                <div className="p-5 xl:p-10 flex flex-col xl:flex-row items-center gap-y-8 gap-x-4 justify-center bg-G500">
+                <div className="p-5 xl:p-10 flex flex-col xl:flex-row xl:justify-between items-center gap-y-8 justify-center bg-G500">
                     <p className="text-28/8 font-normal swear-text">
                         Start your journey with us
                     </p>

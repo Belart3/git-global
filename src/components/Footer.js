@@ -1,6 +1,7 @@
 import { links } from "../data/FooterData";
 import { footerDetail } from "../data/FooterData";
 import { contactInfo } from "../data/FooterData";
+import { Link } from "react-router-dom/cjs/react-router-dom";
 
 const Footer = () => {
     return (  
@@ -11,9 +12,9 @@ const Footer = () => {
                     <ul className="flex flex-col items-start gap-5">
                         {
                             links.map((link) => (
-                                <a href={link.href} key={link.id} className="text-white capitalize ibm-plex-sans-regular text-base">
+                                <Link to={link.href} key={link.id} className="text-white capitalize ibm-plex-sans-regular text-base">
                                     {link.title}
-                                </a>
+                                </Link>
                             ))
                         }
                     </ul>
@@ -59,10 +60,12 @@ const Footer = () => {
                             {
                                 contactInfo.map((data) => (
                                     <div className="flex flex-row items-center gap-3 justify-start" key={data.id}>
-                                        <img src={data.image} alt="" className="size-5"/>
-                                        <p className="text-white ibm-plex-sans-regular text-base">
-                                            {data.text}
-                                        </p>
+                                        <a href={data.href} className="flex flex-row items-center gap-3 justify-start">
+                                            <img src={data.image} alt="" className="size-5"/>
+                                            <p className="text-white ibm-plex-sans-regular text-base">
+                                                {data.text}
+                                            </p>
+                                        </a>
                                     </div>
                                 ))
                             }
