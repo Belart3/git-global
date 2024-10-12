@@ -68,6 +68,7 @@ module.exports = {
       },
       inset: {
         '80': '80px',
+        '88': '88px',
         '130': '130px',
       },
       lineHeight: {
@@ -104,7 +105,7 @@ module.exports = {
       },
       boxShadow: {
         'progress': '0px -10px 40px 0px rgba(0, 0, 0, 0.20)',
-      }
+      },
     },
   },
   plugins: [],
