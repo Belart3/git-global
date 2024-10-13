@@ -1,6 +1,7 @@
 import { links } from "../data/FooterData";
 import { footerDetail } from "../data/FooterData";
 import { contactInfo } from "../data/FooterData";
+import {socialMedia} from "../data/FooterData"
 import { Link } from "react-router-dom/cjs/react-router-dom";
 
 const Footer = () => {
@@ -41,14 +42,14 @@ const Footer = () => {
                         <h5 className="capitalize text-B100 ibm-plex-sans-regular">
                             follow us on
                         </h5>
-                        <div className="flex flex-row gap-4">
-                            <a href="">
-                                <img src="images/facebook-icon.svg" alt="facebook icon" className="size-8"/>
-                            </a>
-
-                            <a href="">
-                                <img src="images/instagram-icon.svg" alt="instagram icon" className="size-8"/>
-                            </a>
+                        <div className="flex flex-row gap-10 lg:gap-4">
+                            {
+                                socialMedia.map((data) => (
+                                    <a href={data.url} key={data.id} target="_blank">
+                                        <img src={data.image} alt={data.alt} className="size-6"/> 
+                                    </a>
+                                ))
+                            }
                         </div>
                     </div>
 

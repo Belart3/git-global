@@ -48,3 +48,24 @@ export const contactInfo = [
         href: 'mailto:info@gitsiowa.com',
     },
 ]
+
+export const socialMedia = [
+    {
+        id: 1,
+        image: 'images/facebook-icon.svg' ,
+        url: 'https://www.facebook.com/GITS2020/' ,
+        alt: 'facebook icon' ,
+    },
+    {
+        id: 2,
+        image: 'images/instagram-icon.svg' ,
+        url: 'https://chat.google.com/room/AAAALkRmbc4/d64Di-RC2t8/d64Di-RC2t8?cls=10' ,
+        alt: 'instagram icon' ,
+    },
+    {
+        id: 3,
+        image: 'images/tiktok-icon.svg' ,
+        url: 'https://www.tiktok.com/@gitglobal51?is_from_webapp=1&sender_device=pc' ,
+        alt: 'tiktok icon' ,
+    },
+]
