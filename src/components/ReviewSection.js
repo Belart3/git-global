@@ -2,6 +2,7 @@ import BtnBlue from "./BtnBlue";
 import BtnTransparent from "./BtnTransparent";
 import { service } from "../data/Services";
 import Services from "./Services";
+import { Link } from "react-router-dom/cjs/react-router-dom";
 
 const ReviewSection = () => {
     return ( 
@@ -26,7 +27,13 @@ const ReviewSection = () => {
                             At GIT Global, we simplify the complexities of U.S. immigration to navigate your journey to the United States. Our experienced team is dedicated to guiding you through every step of the process.
                         </p>
                     </div>
-                    <BtnBlue title="get started" src="images/arrow-right.svg"/>
+                    <div className="w-full sm:w-44 flex justify-center items-center">
+                        <div className="w-full">
+                            <Link to="/form">
+                                <BtnBlue title="get started"/>
+                            </Link>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -36,7 +43,13 @@ const ReviewSection = () => {
                     <p className="text-28/8 font-normal swear-text">
                         Start your journey with us
                     </p>
-                    <BtnTransparent title="start now" src="images/arrow-right.svg"/>
+                    <div className="w-full sm:w-44 flex justify-center items-center">
+                        <div className="w-full">
+                            <Link to="/form">
+                                <BtnTransparent title="start now"/>
+                            </Link>
+                        </div>
+                    </div>
                 </div>
             </div>
 

@@ -1,6 +1,6 @@
 const BtnTransparent = ({title}) => {
     return ( 
-        <button className="border border-BL500 bg-transparent  transition ease-in-out  lg:hover:bg-BL500 text-B500 p-4 flex  flex-row items-center justify-center space-x-3 cursor-pointer md:w-44  md:max-w-400 w-full sm:max-w-44 group">
+        <button className="border border-BL500 bg-transparent  transition ease-in-out  lg:hover:bg-BL500 text-B500 p-4 flex  flex-row items-center justify-center space-x-3 cursor-pointer w-full group">
             <p className="text-base/16 capitalize ibm-plex-sans-regular lg:group-hover:text-white">
                 {title}
             </p>

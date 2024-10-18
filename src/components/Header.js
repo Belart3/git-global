@@ -1,5 +1,6 @@
 import BtnBlue from "./BtnBlue";
 import BtnTransparent from "./BtnTransparent";
+import { Link } from "react-router-dom/cjs/react-router-dom";
 
 const Header = () => {
     return ( 
@@ -14,8 +15,20 @@ const Header = () => {
                         At GIT Global, we simplify the complexities of U.S. immigration to navigate your journey to the United States. Our experienced team is dedicated to guiding you through every step of the process.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-y-4 gap-x-4  justify-start items-center">
-                        <BtnBlue title="get started"/>
-                        <BtnTransparent title="our services"/>
+                        <div className="w-full sm:w-44 flex justify-center items-center">
+                            <div className="w-full">
+                                <Link to="/form">
+                                    <BtnBlue title="get started"/>
+                                </Link>
+                            </div>
+                        </div>
+                        <div className="w-full sm:w-44 flex justify-center items-center">
+                            <div className="w-full">
+                                <Link to="/#review-section">
+                                    <BtnTransparent title="our services"/>
+                                </Link>
+                            </div>
+                        </div>
                     </div>
                 </div>
 

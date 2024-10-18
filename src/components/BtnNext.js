@@ -1,6 +1,6 @@
-const BtnBlue = ({title}) => {
+const BtnNext = ({title}) => {
     return ( 
-        <button className="border border-BL500 bg-BL500 lg:hover:bg-BL500/75 p-4 flex  flex-row items-center justify-center space-x-3 cursor-pointer w-full transition ease-in-out delay-75 group inline-flex">
+        <button className="border border-BL500 bg-BL500 p-4 flex flex-row items-center justify-center space-x-3 cursor-pointer w-full  group inline-flex">
             <p className="text-base/16 capitalize text-white ibm-plex-sans-regular">
                 {title}
             </p>
@@ -14,4 +14,4 @@ const BtnBlue = ({title}) => {
     );
 }
  
-export default BtnBlue;
+export default BtnNext;

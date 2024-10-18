@@ -1,7 +1,4 @@
-import { links } from "../data/FooterData";
-import { footerDetail } from "../data/FooterData";
-import { contactInfo } from "../data/FooterData";
-import {socialMedia} from "../data/FooterData"
+import { footerData } from "../data/FooterData";
 import { Link } from "react-router-dom/cjs/react-router-dom";
 
 const Footer = () => {
@@ -12,7 +9,7 @@ const Footer = () => {
                 <div className="flex flex-col gap-8 w-full lg:w-2/12">
                     <ul className="flex flex-col items-start gap-5">
                         {
-                            links.map((link) => (
+                            footerData.links.map((link) => (
                                 <Link to={link.href} key={link.id} className="text-white capitalize ibm-plex-sans-regular text-base">
                                     {link.title}
                                 </Link>
@@ -28,7 +25,7 @@ const Footer = () => {
                 </div>
 
                 <div className="flex flex-col gap-10  w-full lg:w-5/12">
-                    {footerDetail.map((data) => (
+                    {footerData.footerDetail.map((data) => (
                         <p className="text-white ibm-plex-sans-regular text-base">
                             {data.text}
                         </p>
@@ -44,7 +41,7 @@ const Footer = () => {
                         </h5>
                         <div className="flex flex-row gap-10 lg:gap-4">
                             {
-                                socialMedia.map((data) => (
+                                footerData.socialMedia.map((data) => (
                                     <a href={data.url} key={data.id} target="_blank">
                                         <img src={data.image} alt={data.alt} className="size-6"/> 
                                     </a>
@@ -59,7 +56,7 @@ const Footer = () => {
                         </h5>
                         <div className="flex flex-col gap-4">
                             {
-                                contactInfo.map((data) => (
+                                footerData.contactInfo.map((data) => (
                                     <div className="flex flex-row items-center gap-3 justify-start" key={data.id}>
                                         <a href={data.href} className="flex flex-row items-center gap-3 justify-start">
                                             <img src={data.image} alt="" className="size-5"/>
