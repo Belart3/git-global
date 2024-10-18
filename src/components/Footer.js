@@ -1,6 +1,4 @@
-import { links } from "../data/FooterData";
-import { footerDetail } from "../data/FooterData";
-import { contactInfo } from "../data/FooterData";
+import { footerData } from "../data/FooterData";
 import { Link } from "react-router-dom/cjs/react-router-dom";
 
 const Footer = () => {
@@ -11,7 +9,7 @@ const Footer = () => {
                 <div className="flex flex-col gap-8 w-full lg:w-2/12">
                     <ul className="flex flex-col items-start gap-5">
                         {
-                            links.map((link) => (
+                            footerData.links.map((link) => (
                                 <Link to={link.href} key={link.id} className="text-white capitalize ibm-plex-sans-regular text-base">
                                     {link.title}
                                 </Link>
@@ -27,7 +25,7 @@ const Footer = () => {
                 </div>
 
                 <div className="flex flex-col gap-10  w-full lg:w-5/12">
-                    {footerDetail.map((data) => (
+                    {footerData.footerDetail.map((data) => (
                         <p className="text-white ibm-plex-sans-regular text-base">
                             {data.text}
                         </p>
@@ -41,14 +39,14 @@ const Footer = () => {
                         <h5 className="capitalize text-B100 ibm-plex-sans-regular">
                             follow us on
                         </h5>
-                        <div className="flex flex-row gap-4">
-                            <a href="">
-                                <img src="images/facebook-icon.svg" alt="facebook icon" className="size-8"/>
-                            </a>
-
-                            <a href="">
-                                <img src="images/instagram-icon.svg" alt="instagram icon" className="size-8"/>
-                            </a>
+                        <div className="flex flex-row gap-10 lg:gap-4">
+                            {
+                                footerData.socialMedia.map((data) => (
+                                    <a href={data.url} key={data.id} target="_blank">
+                                        <img src={data.image} alt={data.alt} className="size-6"/> 
+                                    </a>
+                                ))
+                            }
                         </div>
                     </div>
 
@@ -58,7 +56,7 @@ const Footer = () => {
                         </h5>
                         <div className="flex flex-col gap-4">
                             {
-                                contactInfo.map((data) => (
+                                footerData.contactInfo.map((data) => (
                                     <div className="flex flex-row items-center gap-3 justify-start" key={data.id}>
                                         <a href={data.href} className="flex flex-row items-center gap-3 justify-start">
                                             <img src={data.image} alt="" className="size-5"/>

@@ -20,7 +20,6 @@ export default function AccordionUsage({question, answer}) {
 
         <AccordionSummary
         expandIcon={expanded ? <MinusIcon /> : <PlusIcon />}
-        // expandIcon={<PlusIcon />} 
         aria-controls="panel1-content" id="panel1-header" className='!px-0 !text-xl ibm-plex-sans-regular'
         sx={{
             '& .MuiAccordionSummary-content': {
