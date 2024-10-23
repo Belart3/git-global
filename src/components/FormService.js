@@ -3,6 +3,7 @@ import BtnBack from "./BtnBack";
 import { Radio, RadioGroup, FormControlLabel, Typography, Accordion, AccordionDetails, AccordionSummary } from '@mui/material';
 import { questions } from "../data/FormQuestions";
 import BtnNext from "./BtnNext";
+import ScrollToTop from "../components/ScrollToTop";
 
 const FormService = ({onPrev , onNext, selectedValue, onSelectionChange}) => {
     const handleSelection = ( e ) => {
@@ -10,6 +11,7 @@ const FormService = ({onPrev , onNext, selectedValue, onSelectionChange}) => {
     }
     return(
         <div className="w-full">
+            <ScrollToTop />
             <NewsHeader 
                 title="Which service are you looking for?" 
             />

@@ -22,23 +22,22 @@ const Navbar = () => {
 
             <ul className="hidden items-center justify-center md:flex">
                     {linkcont.map((data) => (
-                        <NavLink key={data.id} src={data.src} title={data.title}  href={data.href}/>
+                        <NavLink src={data.src} key={data.id} title={data.title}  href={data.href} onToggle={toggleDropDown} />
                     ))}
-                </ul> 
+            </ul> 
 
-                <div className="sm:w-44 hidden md:flex justify-center items-center">
-                    <div className="w-full">
-                        <Link to="/form">
-                            <BtnBlue title="get started"/>
-                        </Link>
-                    </div>
+            <div className="sm:w-44 hidden md:flex justify-center items-center">
+                <div className="w-full">
+                    <Link to="/form">
+                        <BtnBlue title="get started"/>
+                    </Link>
                 </div>
+            </div>
 
             <button className="h-12 w-12 bg-BL500 p-2 cursor-pointer sm:block md:hidden" onClick={toggleDropDown}>
                 <img src="images/menu-open.png" alt="" className="h-full w-full"/>
             </button>
 
-            {/* change sm:hidden to sm:block */}
             {showDropDown ? (
                 <div className=
                     {`transform transition-all animate__faster ease-in-out animate__animated 

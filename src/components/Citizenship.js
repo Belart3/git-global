@@ -3,6 +3,7 @@ import BtnBack from "./BtnBack";
 import { Radio, RadioGroup, FormControlLabel, Typography } from '@mui/material';
 import { questions } from "../data/FormQuestions";
 import BtnNext from "./BtnNext";
+import ScrollToTop from "../components/ScrollToTop";
 
 const Citizenship = ({onPrev , onNext, selectedValue, onSelectionChange,}) => {
     const handleSelection = ( e ) => {
@@ -10,6 +11,7 @@ const Citizenship = ({onPrev , onNext, selectedValue, onSelectionChange,}) => {
     }
     return(
         <div className="w-full">
+            <ScrollToTop />
             <NewsHeader 
                 title="Are you a US Citizen or permanent resident (Green Card holder)?" 
             />

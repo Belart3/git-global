@@ -3,9 +3,12 @@ import NewsHeader from "../components/NewsHeader";
 import SectionHeading from '../components/SectionHeading'
 import { NewsData } from "../data/News";
 import { PageData } from "../data/NewsPage";
-
+import { useEffect } from "react";
 
 const NewsPage = () => {
+    useEffect(() => {
+        document.title = 'Git Global - News';
+    }, []);
     return (  
         <div className="w-full bg-Background pt-[88px] lg:pt-36">
             <div className="flex flex-col gap-10 lg:gap-16">

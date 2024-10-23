@@ -3,9 +3,11 @@ import { Progress } from "antd";
 import FormStart from "../components/FormStart";
 import Citizenship from "../components/Citizenship";
 import FormService from "../components/FormService";
+import UserData from "../components/UserData";
+import FinalForm from "../components/FinalForm";
 
 const FormPage = ( ) => {
-    const totalSteps = 6;
+    const totalSteps = 5;
     const [currentStep, setCurrentStep] = useState(1);
     const [formData , setFormData] = useState({
         citizenshipSelection: '',
@@ -48,7 +50,6 @@ const FormPage = ( ) => {
                                 <div className="bg-Background h-full w-4 lg:w-6"></div>
                                 <div className="bg-Background h-full w-4 lg:w-6"></div>
                                 <div className="bg-Background h-full w-4 lg:w-6"></div>
-                                <div className="bg-Background h-full w-4 lg:w-6"></div>
                             </div>
                         </div>
                     </div>
@@ -77,11 +78,25 @@ const FormPage = ( ) => {
                                         selectedValue={formData.formServiceSelection}
                                         onSelectionChange={(value) => updateFormData('formServiceSelection', value)}
                                     /> 
-                                    )
+                                )
                             case 4:
-                                return <Citizenship onPrev={handlePrevStep} onNext={handleNextStep}/>
+                                return (
+                                    <UserData 
+                                        onPrev={handlePrevStep} 
+                                        onNext={handleNextStep}
+                                        selectedValue={formData.citizenshipSelection}
+                                        onSelectionChange={(value) => updateFormData('citizenshipSelection', value)}
+                                    />
+                                )
                             case 5:
-                                return <Citizenship onPrev={handlePrevStep} onNext={handleNextStep}/>
+                                return (
+                                    <FinalForm
+                                        onPrev={handlePrevStep} 
+                                        onNext={handleNextStep}
+                                        selectedValue={formData.citizenshipSelection}
+                                        onSelectionChange={(value) => updateFormData('citizenshipSelection', value)}
+                                    />
+                            )
                             default:
                                 return null;
                         }
