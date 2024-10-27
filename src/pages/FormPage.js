@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Progress } from "antd";
 import FormStart from "../components/FormStart";
 import Citizenship from "../components/Citizenship";
@@ -12,6 +12,11 @@ const FormPage = ( ) => {
     const [formData , setFormData] = useState({
         citizenshipSelection: '',
         formServiceSelection: '',
+        userName: '',
+        userEmail: '',
+        phoneNumber: '',
+        address: '',
+        contactMethod: '',
     })
 
     const handleNextStep = () => {
@@ -32,6 +37,9 @@ const FormPage = ( ) => {
             [key]: value,
         }));
     };
+    useEffect(() => {
+        document.title = 'Git Global - Form';
+    }, []);
 
     return(
         <div className="w-full bg-Background ">
@@ -84,8 +92,16 @@ const FormPage = ( ) => {
                                     <UserData 
                                         onPrev={handlePrevStep} 
                                         onNext={handleNextStep}
-                                        selectedValue={formData.citizenshipSelection}
-                                        onSelectionChange={(value) => updateFormData('citizenshipSelection', value)}
+                                        formData={formData}
+                                        setFormData={setFormData}
+                                        userName={formData.userName}
+                                        userEmail={formData.userEmail}
+                                        phoneNumber={formData.phoneNumber}
+                                        address={formData.address}
+                                        onNameChange={(value) => updateFormData('userName', value)}
+                                        onEmailChange={(value) => updateFormData('userEmail', value)}
+                                        onPhoneChange={(value) => updateFormData('phoneNumber', value)}
+                                        onAddressChange={(value) => updateFormData('address', value)}
                                     />
                                 )
                             case 5:
@@ -93,8 +109,8 @@ const FormPage = ( ) => {
                                     <FinalForm
                                         onPrev={handlePrevStep} 
                                         onNext={handleNextStep}
-                                        selectedValue={formData.citizenshipSelection}
-                                        onSelectionChange={(value) => updateFormData('citizenshipSelection', value)}
+                                        selectedMethod={formData.contactMethod}
+                                        onSelectionChange={(value) => updateFormData('contactMethod', value)}
                                     />
                             )
                             default:

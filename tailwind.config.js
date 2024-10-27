@@ -12,6 +12,8 @@ module.exports = {
         'BL75': '#CCD2D8',
         'BL500': '#001F3D',
         'PE300': '#FBEAD9',
+        'pl': '#FDF5EC',
+        'typed': '#FBEAD9',
         'PE500': '#F8DCBF',
         'B75': '#CFCFCF',
         'B100': '#B7B7B7',

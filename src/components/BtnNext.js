@@ -1,6 +1,13 @@
-const BtnNext = ({title}) => {
+const BtnNext = ({title, disabled }) => {
     return ( 
-        <button className="border border-BL500 bg-BL500 p-4 flex flex-row items-center justify-center space-x-3 cursor-pointer w-full  group inline-flex">
+        <button 
+            disabled={disabled} 
+            className={`border p-4 flex flex-row items-center justify-center space-x-3 w-full group inline-flex ${
+                disabled 
+                    ? 'bg-BL100 cursor-not-allowed' 
+                    : 'border-BL500 bg-BL500 cursor-pointer'
+            }`}
+        >
             <p className="text-base/16 capitalize text-white ibm-plex-sans-regular">
                 {title}
             </p>

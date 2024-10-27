@@ -60,7 +60,7 @@ const Citizenship = ({onPrev , onNext, selectedValue, onSelectionChange,}) => {
                     <div onClick={onPrev}><BtnBack title="back"/></div>
                 </div>
                 <div className="w-full">
-                    <div onClick={onNext}><BtnNext title="next"/></div>
+                    <div onClick={onNext} ><BtnNext title="next"  disabled={!selectedValue} /></div>
                 </div>
             </div>
         </div>

@@ -82,10 +82,14 @@ const FormService = ({onPrev , onNext, selectedValue, onSelectionChange}) => {
 
             <div className="flex flex-row items-center justify-center mt-8 lg:mt-10 mx-4 md:mx-8 lg:mx-28 2xl:max-w-screen-2xl lg:mx-auto gap-4 lg:gap-6">
                 <div className="w-full">
-                    <div onClick={onPrev}><BtnBack title="back"/></div>
+                    <div onClick={onPrev}>
+                        <BtnBack title="back"/>
+                    </div>
                 </div>
                 <div className="w-full">
-                    <div onClick={onNext}><BtnNext title="next"/></div>
+                    <div onClick={onNext} >
+                        <BtnNext title="next"  disabled={!selectedValue} />
+                    </div>
                 </div>
             </div>
         </div>

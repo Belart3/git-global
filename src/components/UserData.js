@@ -2,21 +2,43 @@ import NewsHeader from "./NewsHeader";
 import BtnNext from "./BtnNext";
 import BtnBack from "./BtnBack";
 import ScrollToTop from "./ScrollToTop";
-import { questions } from "../data/FormQuestions"; 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import FormInput from "./FormInput";
+import EmailInputComponent from "./EmailInputComponent";
+import PhoneInputComponent from "./PhoneInputComponent";
 
-const UserData = ({onNext, onPrev}) => {
+const UserData = ({onNext, onPrev, userName, userEmail ,phoneNumber , address, setFormData,formData}) => {
 
     const [isFocused, setIsFocused] = useState(false);
-    const [inputValues, setInputValues] = useState({
-        name: '',
-        email: '',
-        phoneNumber: '',
-        address: '',
-    });
     const handleInputChange = (field) => (event) => {
-        setInputValues({ ...inputValues, [field]: event.target.value });
+        setFormData({ ...formData, [field]: event.target.value });
+    };
+    const [emailError, setEmailError] = useState(false);
+    const [validEmail, setValidEmail] = useState(false);
+
+    const handleEmailChange = (e) => {
+        const newEmail = e.target.value;
+        setFormData({ ...formData, userEmail: newEmail }); 
+        validateEmail(newEmail);
+    };
+    const handleNumberChange = (value) => {
+        setFormData({ ...formData, phoneNumber: value });
+    };
+
+    useEffect(() => {
+        if(userEmail !== ''){
+            validateEmail(formData.userEmail);
+        }
+    }, [formData.userEmail]);
+
+    // Function to validate email format
+    const validateEmail = (email) => {
+        // Simple regex for email validation
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        const isValid = emailRegex.test(email);
+        setEmailError(!isValid);
+        setValidEmail(isValid);
+        console.log("Valid Email:", isValid);
     };
       
     return(
@@ -29,33 +51,41 @@ const UserData = ({onNext, onPrev}) => {
             <div className="w-full">
                 <div className="mt-10 lg:mt-16 mx-4 md:mx-8 lg:mx-28 2xl:max-w-screen-2xl lg:mx-auto space-y-4 space-y-6">
                     <FormInput 
+                        id="userName"
                         type="text"
-                        label="Name"
-                        value={inputValues.name}
-                        onChange={handleInputChange('name')}
+                        label="Full Name (First name then last name)"
+                        value={userName}
+                        onChange={handleInputChange('userName')}
                         onFocus={() => console.log()}
                         onBlur={() => console.log()}
                     />
-                    <FormInput 
+                    <EmailInputComponent 
+                        id="userEmail"
+                        emailError={emailError}
+                        errorText="please enter a valid email address"
+                        email={formData.userEmail}
+                        handleEmailChange={handleEmailChange}
+                        validateEmail={validateEmail}
                         type="email"
                         label="Email"
-                        value={inputValues.email}
-                        onChange={handleInputChange('email')}
-                        onFocus={() => console.log()}
-                        onBlur={() => console.log()}
+                        value={userEmail}
+                        onChange={handleInputChange('userEmail')}
                     />
-                    <FormInput 
+                    <PhoneInputComponent 
+                        id="phoneNumber"
                         type="tel"
                         label="Phone Number"
-                        value={inputValues.phoneNumber}
-                        onChange={handleInputChange('phoneNumber')}
+                        value={phoneNumber}
+                        onChange={handleNumberChange}
+                        //onChange={handleInputChange('phoneNumber')}
                         onFocus={() => console.log()}
                         onBlur={() => console.log()}
                     />
                     <FormInput 
+                        id="address"
                         type="text"
                         label="Address"
-                        value={inputValues.address}
+                        value={address}
                         onChange={handleInputChange('address')}
                         onFocus={() => console.log()}
                         onBlur={() => console.log()}
@@ -69,8 +99,10 @@ const UserData = ({onNext, onPrev}) => {
                         <div onClick={onPrev}><BtnBack title="back"/></div>
                     </div>
                     <div className="w-full">
-                        <div onClick={onNext}><BtnNext title="next"/></div>
+                    <div onClick={onNext} >
+                        <BtnNext title="next"  disabled={!userName || !phoneNumber || !address || !validEmail } />
                     </div>
+                </div>
                 </div>
             </div>
         </div>

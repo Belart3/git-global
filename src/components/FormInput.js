@@ -1,6 +1,6 @@
 import { FormControl, InputLabel, OutlinedInput, Typography } from '@mui/material';
 
-const FormInput = ({ id, type, label, value, onChange, onFocus, onBlur, name }) => {
+const FormInput = ({ id, type, label, value, onChange, onFocus, name }) => {
     return (  
         <div className='w-full'>
             <FormControl fullWidth >
@@ -13,7 +13,7 @@ const FormInput = ({ id, type, label, value, onChange, onFocus, onBlur, name }) 
                 },
                 }}
                 >
-                    <Typography className="text-base ibm-plex-sans-regular text-BL500 bg-Background px-2">
+                    <Typography className="text-base ibm-plex-sans-regular  bg-pl px-2">
                     {label}
                     </Typography>
                 </InputLabel>
@@ -22,7 +22,6 @@ const FormInput = ({ id, type, label, value, onChange, onFocus, onBlur, name }) 
                 type={type}
                 onFocus={onFocus} 
                 value={value}
-                //onBlur={onBlur}
                 onChange={onChange}
                 name={name}
                 placeholder=" " // A space to allow the floating label effect
@@ -33,10 +32,10 @@ const FormInput = ({ id, type, label, value, onChange, onFocus, onBlur, name }) 
                 color: '#101010',
                 padding: '16px',
                 fontFamily: 'IBM Plex Sans !important',
-                background: value  ? '#FBEAD9' : 'transparent',
+                background: value  ? '#FBEAD9' : '#FDF5EC',
 
                 '&::placeholder': {
-                color: 'transparent', 
+                color: '#707070', 
                 },
 
                 },
