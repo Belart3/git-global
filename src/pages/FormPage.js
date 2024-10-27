@@ -1,15 +1,22 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Progress } from "antd";
 import FormStart from "../components/FormStart";
 import Citizenship from "../components/Citizenship";
 import FormService from "../components/FormService";
+import UserData from "../components/UserData";
+import FinalForm from "../components/FinalForm";
 
 const FormPage = ( ) => {
-    const totalSteps = 6;
+    const totalSteps = 5;
     const [currentStep, setCurrentStep] = useState(1);
     const [formData , setFormData] = useState({
         citizenshipSelection: '',
         formServiceSelection: '',
+        userName: '',
+        userEmail: '',
+        phoneNumber: '',
+        address: '',
+        contactMethod: '',
     })
 
     const handleNextStep = () => {
@@ -30,6 +37,9 @@ const FormPage = ( ) => {
             [key]: value,
         }));
     };
+    useEffect(() => {
+        document.title = 'Git Global - Form';
+    }, []);
 
     return(
         <div className="w-full bg-Background ">
@@ -44,7 +54,6 @@ const FormPage = ( ) => {
                                 strokeWidth="4px"
                             />
                             <div className="absolute top-0 left-0 h-full w-full flex items-center justify-evenly gap-4">
-                                <div className="bg-Background h-full w-4 lg:w-6"></div>
                                 <div className="bg-Background h-full w-4 lg:w-6"></div>
                                 <div className="bg-Background h-full w-4 lg:w-6"></div>
                                 <div className="bg-Background h-full w-4 lg:w-6"></div>
@@ -77,11 +86,33 @@ const FormPage = ( ) => {
                                         selectedValue={formData.formServiceSelection}
                                         onSelectionChange={(value) => updateFormData('formServiceSelection', value)}
                                     /> 
-                                    )
+                                )
                             case 4:
-                                return <Citizenship onPrev={handlePrevStep} onNext={handleNextStep}/>
+                                return (
+                                    <UserData 
+                                        onPrev={handlePrevStep} 
+                                        onNext={handleNextStep}
+                                        formData={formData}
+                                        setFormData={setFormData}
+                                        userName={formData.userName}
+                                        userEmail={formData.userEmail}
+                                        phoneNumber={formData.phoneNumber}
+                                        address={formData.address}
+                                        onNameChange={(value) => updateFormData('userName', value)}
+                                        onEmailChange={(value) => updateFormData('userEmail', value)}
+                                        onPhoneChange={(value) => updateFormData('phoneNumber', value)}
+                                        onAddressChange={(value) => updateFormData('address', value)}
+                                    />
+                                )
                             case 5:
-                                return <Citizenship onPrev={handlePrevStep} onNext={handleNextStep}/>
+                                return (
+                                    <FinalForm
+                                        onPrev={handlePrevStep} 
+                                        onNext={handleNextStep}
+                                        selectedMethod={formData.contactMethod}
+                                        onSelectionChange={(value) => updateFormData('contactMethod', value)}
+                                    />
+                            )
                             default:
                                 return null;
                         }

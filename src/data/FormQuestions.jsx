@@ -36,4 +36,46 @@ export const questions = {
             message: "Great! Let’s gather more details about your visa status.",
         },
     ],
+    userInfo: [
+        {
+            id: 1,
+            label: "Name",
+            name: "name",
+            value: "Name",
+            type: "text",
+        },
+        {
+            id: 2,
+            label: "Email",
+            name: "email",
+            value: "Email",
+            type: "email",
+        },
+        {
+            id: 3,
+            label: "Phone Number",
+            name: "phoneNumber",
+            value: "Phone Number",
+            type: "tel",
+        },
+        {
+            id: 4,
+            label: "Address",
+            name: "address",
+            value: "Address",
+            type: "text",
+        },
+    ],
+    final: [
+        {
+            id: 1,
+            label: "I would like to request a call",
+            value: "I would like to request a call",
+        },
+        {
+            id: 2,
+            label: "I would like to schedule a consultation",
+            value: "I would like to schedule a consultation",
+        },
+    ]
 };

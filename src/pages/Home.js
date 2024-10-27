@@ -5,8 +5,12 @@ import NewsReport from '../components/NewsReports';
 import ReviewSection from '../components/ReviewSection';
 import WhyGitGlobal from '../components/WhyGitGlobal'
 import CheckEligibility from '../components/CheckEligibility'
+import { useEffect } from 'react';
 
 const Home = () => {
+    useEffect(() => {
+        document.title = 'Git Global';
+    }, []);
     return (  
         <div className="w-full bg-Background">
             <Header />
