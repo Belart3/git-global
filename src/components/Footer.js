@@ -20,7 +20,7 @@ const Footer = () => {
                         <span className="size-6">
                             <img src="images/copyright.svg" alt="" className="h-full w-full"/>
                         </span>
-                        GITS Global, 2024
+                        GIT Global, 2024
                     </p>
                 </div>
 

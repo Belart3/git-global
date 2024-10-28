@@ -31,14 +31,11 @@ const UserData = ({onNext, onPrev, userName, userEmail ,phoneNumber , address, s
         }
     }, [formData.userEmail]);
 
-    // Function to validate email format
     const validateEmail = (email) => {
-        // Simple regex for email validation
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         const isValid = emailRegex.test(email);
         setEmailError(!isValid);
         setValidEmail(isValid);
-        console.log("Valid Email:", isValid);
     };
       
     return(
@@ -77,7 +74,6 @@ const UserData = ({onNext, onPrev, userName, userEmail ,phoneNumber , address, s
                         label="Phone Number"
                         value={phoneNumber}
                         onChange={handleNumberChange}
-                        //onChange={handleInputChange('phoneNumber')}
                         onFocus={() => console.log()}
                         onBlur={() => console.log()}
                     />

@@ -20,11 +20,11 @@ const Testimonials = ({title, testimony, author}) => {
                 <img src="images/green-star.svg" alt="" className="size-7"/>
             </div>
 
-            <p className="text-B300 text-base mb-10 ibm-plex-sans-regular">
+            <p className="text-B400 text-base mb-10 ibm-plex-sans-regular">
                 {testimony}
             </p>
 
-            <p className=" ibm-plex-sans-regular">
+            <p className=" ibm-plex-sans-regular text-B500">
                 {author}
             </p>
 

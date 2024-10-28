@@ -9,7 +9,7 @@ import { useEffect } from 'react';
 
 const Home = () => {
     useEffect(() => {
-        document.title = 'Git Global';
+        document.title = 'GIT Global';
     }, []);
     return (  
         <div className="w-full bg-Background">

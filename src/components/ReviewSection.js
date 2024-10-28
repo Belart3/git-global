@@ -10,7 +10,6 @@ const ReviewSection = () => {
           
             <div className="w-off-16  flex flex-col bg-PE500 place-self-start max-w-lg lg:max-w-none  lg:row-span-3 lg:order-2 lg:place-self-end lg:w-full">
                 <div className="bg-Background w-fit p-4 lg:py-6 lg:px-10 ">
-                    {/* <NavLink title="our services" src="images/service.svg"/> */}
                     <div className="flex flex-row items-center space-x-3">
                         <img src="images/service.svg" alt="" className="size-8"/>
                         <p className="capitalize swear-text text-28/38 lg:text-32/38 font-normal text-B500">
@@ -46,7 +45,17 @@ const ReviewSection = () => {
                     <div className="w-full sm:w-44 flex justify-center items-center">
                         <div className="w-full">
                             <Link to="/form">
-                                <BtnTransparent title="start now"/>
+                                <button className="border border-BL500 bg-transparent  transition ease-in-out  lg:hover:bg-PE500 lg:hover:border-PE500 text-B500 p-4 flex  flex-row items-center justify-center space-x-3 cursor-pointer w-full group">
+                                    <p className="text-base/16 capitalize ibm-plex-sans-regular lg:group-hover:text-B500">
+                                        start now
+                                    </p>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g id="arrow-right-02">
+                                        <path id="Vector" d="M15.0001 17L20 12L15 7" stroke="#101010" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path id="Vector_2" d="M4 12H20" stroke="#101010" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </g>
+                                    </svg>
+                                </button>
                             </Link>
                         </div>
                     </div>

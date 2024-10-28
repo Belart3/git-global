@@ -22,13 +22,11 @@ const FormPage = ( ) => {
     const handleNextStep = () => {
         if( currentStep < totalSteps){
             setCurrentStep(currentStep + 1);
-            console.log(currentStep)
         }   
     };
     const handlePrevStep = () => {
         if (currentStep > 1 ){
             setCurrentStep(currentStep - 1);
-            console.log(currentStep)
         }
     };
     const updateFormData = (key, value) => {
@@ -38,7 +36,7 @@ const FormPage = ( ) => {
         }));
     };
     useEffect(() => {
-        document.title = 'Git Global - Form';
+        document.title = 'GIT Global - Form';
     }, []);
 
     return(

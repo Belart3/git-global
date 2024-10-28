@@ -7,7 +7,7 @@ import { useEffect } from "react";
 
 const NewsPage = () => {
     useEffect(() => {
-        document.title = 'Git Global - News';
+        document.title = 'GIT Global - News';
     }, []);
     return (  
         <div className="w-full bg-Background pt-[88px] lg:pt-36">
@@ -25,7 +25,7 @@ const NewsPage = () => {
                         <div className="flex flex-col gap-6">
                             {
                                 PageData.map((data) => (
-                                    <p className="ibm-plex-sans-regular text-B300 text-lg lg:text-xl" key={data.id}>
+                                    <p className="ibm-plex-sans-regular text-B500 text-lg lg:text-xl" key={data.id}>
                                         {data.paragraph}
                                     </p>
                                 ))

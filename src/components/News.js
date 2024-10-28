@@ -12,7 +12,7 @@ const News = ({src, date,  paragraph, href}) => {
                     <h5 className="text-B300 text-xs/12 ibm-plex-sans-regular">
                         {date}
                     </h5>
-                    <p className="text-BL500 text-lg/22 md:text-xl/24 ibm-plex-sans-regular capitalize lg:group-hover:underline">
+                    <p className="text-B500 text-lg/22 md:text-xl/24 ibm-plex-sans-regular capitalize lg:group-hover:underline">
                         {paragraph}
                     </p>
                 </div>
