@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/gits-global/static/css/main.759e205e.css",
-    "main.js": "/gits-global/static/js/main.5c498308.js",
-    "static/media/hero-image-1.png": "/gits-global/static/media/hero-image-1.b9d357cf4130b761c7f9.png",
-    "static/media/review-image.png": "/gits-global/static/media/review-image.295351fa0204d19b187d.png",
-    "static/media/hero-image-2.png": "/gits-global/static/media/hero-image-2.4a2fc18c42aeb7a29fa1.png",
-    "static/media/news-image-2.png": "/gits-global/static/media/news-image-2.38b0dee1131f0fa3daae.png",
-    "static/media/immigration.png": "/gits-global/static/media/immigration.441e3bad75b2e0ab30c0.png",
-    "static/media/fonnts.com-Swear-Text-Light.otf": "/gits-global/static/media/fonnts.com-Swear-Text-Light.4355bc23f14c46732af0.otf",
-    "static/media/fonnts.com-Swear-Text-Medium.otf": "/gits-global/static/media/fonnts.com-Swear-Text-Medium.9145a54b83bb19224982.otf",
-    "static/media/fonnts.com-Swear-Text-.otf": "/gits-global/static/media/fonnts.com-Swear-Text-.1809af34fcdf4ca8ab6f.otf",
-    "index.html": "/gits-global/index.html",
-    "main.759e205e.css.map": "/gits-global/static/css/main.759e205e.css.map",
-    "main.5c498308.js.map": "/gits-global/static/js/main.5c498308.js.map"
+    "main.css": "/git-global/static/css/main.68493726.css",
+    "main.js": "/git-global/static/js/main.d5c43ecb.js",
+    "static/media/hero-image-1.png": "/git-global/static/media/hero-image-1.b9d357cf4130b761c7f9.png",
+    "static/media/review-image.png": "/git-global/static/media/review-image.295351fa0204d19b187d.png",
+    "static/media/hero-image-2.png": "/git-global/static/media/hero-image-2.4a2fc18c42aeb7a29fa1.png",
+    "static/media/news-image-2.png": "/git-global/static/media/news-image-2.38b0dee1131f0fa3daae.png",
+    "static/media/immigration.png": "/git-global/static/media/immigration.441e3bad75b2e0ab30c0.png",
+    "static/media/fonnts.com-Swear-Text-Light.otf": "/git-global/static/media/fonnts.com-Swear-Text-Light.4355bc23f14c46732af0.otf",
+    "static/media/fonnts.com-Swear-Text-Medium.otf": "/git-global/static/media/fonnts.com-Swear-Text-Medium.9145a54b83bb19224982.otf",
+    "static/media/fonnts.com-Swear-Text-.otf": "/git-global/static/media/fonnts.com-Swear-Text-.1809af34fcdf4ca8ab6f.otf",
+    "index.html": "/git-global/index.html",
+    "main.68493726.css.map": "/git-global/static/css/main.68493726.css.map",
+    "main.d5c43ecb.js.map": "/git-global/static/js/main.d5c43ecb.js.map"
   },
   "entrypoints": [
-    "static/css/main.759e205e.css",
-    "static/js/main.5c498308.js"
+    "static/css/main.68493726.css",
+    "static/js/main.d5c43ecb.js"
   ]
 }
