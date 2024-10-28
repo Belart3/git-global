@@ -94,6 +94,13 @@ html {
   }
   
   @font-face {
+    font-family: 'swearText-normal';
+    src: url('./fonts/fonnts.com-Swear-Text-.otf') format('truetype'); /* or woff, woff2 */
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
     font-family: 'swearText-semibold';
     src: url('./fonts/fonnts.com-Swear-Text-Light.otf') format('truetype'); /* or woff, woff2 */
     font-style: normal;
@@ -101,12 +108,16 @@ html {
   
   @font-face {
     font-family: 'swearText-italic';
-    src: url('./fonts/fonnts.com-Swear-Text-Thin.otf') format('truetype'); /* or woff, woff2 */
+    src: url('./fonts/fonnts.com-Swear-Text-Medium.otf') format('truetype'); /* or woff, woff2 */
 
   }
 
   .swear-text {
     font-family: "swearText", sans-serif;
+  }
+
+  .swear-text-normal {
+    font-family: "swearText-normal", sans-serif;
   }
 
   .swear-text-semibold {

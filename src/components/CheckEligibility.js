@@ -60,7 +60,7 @@ const CheckEligibility = () => {
                             <h5 className="swear-text-semibold font-semibold text-B500 text-base lg:text-2xl/28">
                                 Schedule your consultation today
                             </h5>
-                            <p className="text-B300 hidden md:block lg:text-base ibm-plex-sans-regular">
+                            <p className="text-B400 hidden md:block lg:text-base ibm-plex-sans-regular">
                                 Unlimited support. Dedicated prepare consultants. Accuracy guaranteed.
                             </p>
                         </div>

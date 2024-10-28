@@ -14,7 +14,7 @@ const Navbar = () => {
         setShowDropDown(!showDropDown);
     };
     return ( 
-        <nav className="flex flex-row justify-between items-center px-4 md:px-8  lg:px-20 max-w-screen-2xl 2xl:px-0 mx-auto fixed top-0 inset-x-0 z-50 bg-Background h-16">
+        <nav className="flex flex-row justify-between items-center py-2 px-4 md:px-8  lg:px-20 max-w-screen-2xl 2xl:px-0 mx-auto fixed top-0 inset-x-0 z-50 bg-Background h-20">
 
             <Link to="/">
                 <Logo />

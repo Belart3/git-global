@@ -24,7 +24,7 @@ const FormInput = ({ id, type, label, value, onChange, onFocus, name }) => {
                 value={value}
                 onChange={onChange}
                 name={name}
-                placeholder=" " // A space to allow the floating label effect
+                placeholder=" "
 
                 sx={{
 

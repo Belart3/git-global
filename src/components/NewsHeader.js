@@ -17,7 +17,7 @@ const NewsHeader = ({date , title , subtitle}) => {
             
             {
                 subtitle && 
-                <h4 className="text-lg text-start md:text-center lg:text-xl text-B300 ibm-plex-sans-regular">
+                <h4 className="text-lg text-start md:text-center lg:text-xl text-B400 ibm-plex-sans-regular">
                     {subtitle}
                 </h4>
             }

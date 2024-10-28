@@ -31,7 +31,7 @@ export default function AccordionUsage({question, answer}) {
         </AccordionSummary>
 
         <AccordionDetails
-        className='!py-0 text-B300 text-xl ibm-plex-sans-regular'
+        className='!py-0 text-B400 text-xl ibm-plex-sans-regular'
         >
           {answer}
         </AccordionDetails>
