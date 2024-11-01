@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/git-global/static/css/main.b914126f.css",
-    "main.js": "/git-global/static/js/main.fc9c0505.js",
+    "main.js": "/git-global/static/js/main.af045f3f.js",
     "static/media/news-image-2.png": "/git-global/static/media/news-image-2.03db44af8b28bbf9b48d.png",
     "static/media/news-image-1.png": "/git-global/static/media/news-image-1.744b0da9e26e48e006ed.png",
     "static/media/news-image-3.png": "/git-global/static/media/news-image-3.358b07ea702542621315.png",
@@ -14,10 +14,10 @@
     "static/media/fonnts.com-Swear-Text-.otf": "/git-global/static/media/fonnts.com-Swear-Text-.1809af34fcdf4ca8ab6f.otf",
     "index.html": "/git-global/index.html",
     "main.b914126f.css.map": "/git-global/static/css/main.b914126f.css.map",
-    "main.fc9c0505.js.map": "/git-global/static/js/main.fc9c0505.js.map"
+    "main.af045f3f.js.map": "/git-global/static/js/main.af045f3f.js.map"
   },
   "entrypoints": [
     "static/css/main.b914126f.css",
-    "static/js/main.fc9c0505.js"
+    "static/js/main.af045f3f.js"
   ]
 }
