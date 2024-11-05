@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/git-global/static/css/main.09faa023.css",
-    "main.js": "/git-global/static/js/main.013ec591.js",
-    "static/media/news-image-2.png": "/git-global/static/media/news-image-2.03db44af8b28bbf9b48d.png",
-    "static/media/news-image-1.png": "/git-global/static/media/news-image-1.744b0da9e26e48e006ed.png",
-    "static/media/news-image-3.png": "/git-global/static/media/news-image-3.358b07ea702542621315.png",
-    "static/media/hero-image-1.png": "/git-global/static/media/hero-image-1.b9d357cf4130b761c7f9.png",
-    "static/media/review-image.png": "/git-global/static/media/review-image.295351fa0204d19b187d.png",
-    "static/media/hero-image-2.png": "/git-global/static/media/hero-image-2.4a2fc18c42aeb7a29fa1.png",
+    "main.css": "/git-global/static/css/main.a68681c7.css",
+    "main.js": "/git-global/static/js/main.59bfb02c.js",
     "static/media/immigration.png": "/git-global/static/media/immigration.441e3bad75b2e0ab30c0.png",
+    "static/media/news-image-2.jpg": "/git-global/static/media/news-image-2.ceb0e9c04d5a00bf1928.jpg",
+    "static/media/news-image-1.jpg": "/git-global/static/media/news-image-1.3661b873a6a8bad2dc50.jpg",
     "static/media/fonnts.com-Swear-Text-Light.otf": "/git-global/static/media/fonnts.com-Swear-Text-Light.4355bc23f14c46732af0.otf",
     "static/media/fonnts.com-Swear-Text-Medium.otf": "/git-global/static/media/fonnts.com-Swear-Text-Medium.9145a54b83bb19224982.otf",
     "static/media/fonnts.com-Swear-Text-.otf": "/git-global/static/media/fonnts.com-Swear-Text-.1809af34fcdf4ca8ab6f.otf",
+    "static/media/news-image-3.jpg": "/git-global/static/media/news-image-3.7dcf334dab34f1ae85d7.jpg",
+    "static/media/review-image.jpg": "/git-global/static/media/review-image.e8af6c875d279be0f230.jpg",
+    "static/media/hero-image-1.jpg": "/git-global/static/media/hero-image-1.38121a95753a1702c9ff.jpg",
+    "static/media/hero-image-2.jpg": "/git-global/static/media/hero-image-2.91603f5262d9623ffec5.jpg",
     "index.html": "/git-global/index.html",
-    "main.09faa023.css.map": "/git-global/static/css/main.09faa023.css.map",
-    "main.013ec591.js.map": "/git-global/static/js/main.013ec591.js.map"
+    "main.a68681c7.css.map": "/git-global/static/css/main.a68681c7.css.map",
+    "main.59bfb02c.js.map": "/git-global/static/js/main.59bfb02c.js.map"
   },
   "entrypoints": [
-    "static/css/main.09faa023.css",
-    "static/js/main.013ec591.js"
+    "static/css/main.a68681c7.css",
+    "static/js/main.59bfb02c.js"
   ]
 }
