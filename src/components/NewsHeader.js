@@ -1,6 +1,6 @@
 const NewsHeader = ({date , title , subtitle}) => {
     return (  
-        <div className="flex flex-col gap-8 justify-center items-start md:items-center mx-4 md:mx-8 lg:mx-28 2xl:max-w-screen-2xl lg:mx-auto">
+        <div className="flex flex-col gap-8 justify-center items-start md:items-center w-full">
             {
                 date && 
                 <h5 className="text-base text-start md:text-center lg:text-lg ibm-plex-sans-regular text-B300">
@@ -17,7 +17,7 @@ const NewsHeader = ({date , title , subtitle}) => {
             
             {
                 subtitle && 
-                <h4 className="text-lg text-start md:text-center lg:text-xl text-B400 ibm-plex-sans-regular">
+                <h4 className="text-lg text-start md:text-center lg:text-xl text-B500 ibm-plex-sans-regular">
                     {subtitle}
                 </h4>
             }

@@ -5,10 +5,10 @@ import { Link } from "react-router-dom/cjs/react-router-dom";
 const Header = () => {
     return ( 
         <header className="w-full">
-            <div className="flex flex-col md:flex-row items-center justify-between mx-4 md:mx-8 lg:mx-20 max-w-screen-2xl 2xl:px-0 2xl:mx-auto gap-y-10 xl:gap-x-20 pt-28 lg:h-screen lg:max-h-1000 lg:min-h-700">
+            <div className="flex flex-col md:flex-row items-center justify-between mx-4 md:mx-8 lg:mx-20 max-w-screen-2xl 2xl:px-0 2xl:mx-auto gap-y-10 xl:gap-x-20 pt-28 lg:h-screen lg:max-h-800 lg:min-h-700">
                 
                 <div className=" space-y-8 w-full md:w-1/2 lg:w-48">
-                    <h2 className="text-6xl font-normal text-B500 swear-text">
+                    <h2 className="text-5xl lg:text-6xl font-normal text-B500 swear-text">
                         The <br/> <span className='italic font-semibold text-B500 swear-text-italic'>Simplified</span> <br/> American Journey
                     </h2>
                     <p className="ibm-plex-sans-regular text-B400 text-lg/7">

@@ -1,5 +1,4 @@
 import BtnBlue from "./BtnBlue";
-import BtnTransparent from "./BtnTransparent";
 import { service } from "../data/Services";
 import Services from "./Services";
 import { Link } from "react-router-dom/cjs/react-router-dom";
@@ -19,7 +18,7 @@ const ReviewSection = () => {
                 </div>
                 <div className="py-10 px-5 md:p-10 flex flex-col items-start justify-center gap-y-8 w-full">
                     <div className="flex flex-col gap-x-10 gap-y-10">
-                        <h3 className="text-6xl leading-60 font-normal swear-text">
+                        <h3 className="text-5xl lg:text-6xl leading-60 font-normal swear-text">
                             Bringing Families Together  
                         </h3>
                         <p className="ibm-plex-sans-regular text-B400 text-lg/7">
@@ -45,16 +44,18 @@ const ReviewSection = () => {
                     <div className="w-full sm:w-44 flex justify-center items-center">
                         <div className="w-full">
                             <Link to="/form">
-                                <button className="border border-BL500 bg-transparent  transition ease-in-out  lg:hover:bg-PE500 lg:hover:border-PE500 text-B500 p-4 flex  flex-row items-center justify-center space-x-3 cursor-pointer w-full group">
+                                <button className="border border-BL500 bg-transparent lg:hover:scale-90 duration-500 transition ease-in-out text-B500 p-4 flex  flex-row items-center justify-center space-x-3 cursor-pointer w-full group">
                                     <p className="text-base/16 capitalize ibm-plex-sans-regular lg:group-hover:text-B500">
                                         start now
                                     </p>
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <g id="arrow-right-02">
-                                        <path id="Vector" d="M15.0001 17L20 12L15 7" stroke="#101010" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path id="Vector_2" d="M4 12H20" stroke="#101010" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </g>
-                                    </svg>
+                                    <div class="lg:group-hover:animate-[horizontal_1s_infinite]">
+                                        <svg  className="size-6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g id="arrow-right-02">
+                                            <path id="Vector" d="M15.0001 17L20 12L15 7" stroke="#101010" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path id="Vector_2" d="M4 12H20" stroke="#101010" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </g>
+                                        </svg>
+                                    </div>
                                 </button>
                             </Link>
                         </div>

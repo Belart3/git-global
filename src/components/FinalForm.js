@@ -18,11 +18,12 @@ const FinalForm = ({onNext, onPrev, selectedMethod, onSelectionChange}) => {
         <div className="w-full">
             <ScrollToTop />
             <NewsHeader 
-                title="Now that we have your information, how can we help?"
+                    title="Now that we have your information, how can we help?"
             />
+
             <div className="flex flex-col justify-center items-center">
                 <div className="w-full">
-                    <div className="mt-10 lg:mt-16 mx-4 md:mx-8 lg:mx-28 2xl:max-w-screen-2xl lg:mx-auto">
+                    <div className="mt-10 lg:mt-16">
                         <RadioGroup className="gap-4 lg:gap-6">
                             {
                                 questions.final.map((form) => (
@@ -63,7 +64,7 @@ const FinalForm = ({onNext, onPrev, selectedMethod, onSelectionChange}) => {
                 </div>
 
                 <div className="w-full">
-                    <div className="flex flex-row items-center justify-center mt-8 lg:mt-10 mx-4 md:mx-8 lg:mx-28 2xl:max-w-screen-2xl lg:mx-auto gap-4 lg:gap-6">
+                    <div className="flex flex-row items-center justify-center mt-8 lg:mt-10 gap-4 lg:gap-6">
                         <div className="w-full">
                             <div onClick={onPrev}><BtnBack title="back"/></div>
                         </div>
@@ -73,12 +74,12 @@ const FinalForm = ({onNext, onPrev, selectedMethod, onSelectionChange}) => {
                                     selectedMethod === 'I would like to request a call' 
                                     ?   
                                     <a href="tel:+15154467074">
-                                        <BtnNext title="call"  disabled={!selectedMethod} />
+                                        <BtnNext title="call"  disabled={!selectedMethod} type="submit" />
                                     </a>
                                     : selectedMethod === 'I would like to schedule a consultation' 
                                     ? 
                                     <a href="https://link.sibanetics.online/widget/bookings/git-global-consultation-appointment" target="_blank" onClick={handleRedirect}>
-                                        <BtnNext title="schedule now"  disabled={!selectedMethod} />
+                                        <BtnNext title="schedule now"  disabled={!selectedMethod} type="submit" />
                                     </a> 
                                     : 
                                     <BtnNext title="next"  disabled={!selectedMethod} /> 

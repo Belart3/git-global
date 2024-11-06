@@ -26,7 +26,7 @@ const Footer = () => {
 
                 <div className="flex flex-col gap-10  w-full lg:w-5/12">
                     {footerData.footerDetail.map((data) => (
-                        <p className="text-white ibm-plex-sans-regular text-base">
+                        <p className="text-white ibm-plex-sans-regular text-base" key={data.id}>
                             {data.text}
                         </p>
                     ))}

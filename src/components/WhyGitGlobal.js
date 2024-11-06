@@ -7,7 +7,7 @@ const WhyGitGlobal = () => {
         <section className="flex flex-col gap-16 lg:gap-10 items-start justify-start mx-4 md:mx-8 lg:mx-20 max-w-screen-2xl 2xl:mx-auto">
             <SectionHeading title="Why choose GIT Global?" src="images/service.svg"/>
 
-            <p className="swear-text-italic font-semibold italic text-5xl lg:text-64/64">
+            <p className="swear-text-italic font-semibold italic text-40 lg:text-64/64">
                 “We are loved by immigrants”
             </p>
 

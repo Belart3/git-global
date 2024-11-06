@@ -54,6 +54,7 @@ module.exports = {
       },
       maxHeight: {
         '700': '700px',
+        '800': '800px',
         '1000': '1000px',
       },
       height: {
@@ -81,6 +82,7 @@ module.exports = {
         '16': '16px',
         '20': '20px',
         '22': '22px',
+        '30': '30px',
         '32': '32px',
         '24': '24px',
         '28': '28px',
@@ -95,6 +97,7 @@ module.exports = {
         '20': '20px',
         '28': '28px',
         '32': '32px',
+        '40': '40px',
         '48': '48px',
         '60': '60px',
         '64': '64px',
@@ -103,12 +106,31 @@ module.exports = {
         '10px': '10px',
       },
       backgroundImage: {
-        'review-section': "url(img/review-image.png)",
+        'review-section': "url(img/review-image.jpg)",
         'immigration-section': "url(img/immigration.png)",
         'dotted-line': "url(img/dotted-line.png)",
-        'hero-1': "url(img/hero-image-1.png)",
-        'hero-2': "url(img/hero-image-2.png)",
-        'news-1': "url(img/news-image-2.png)",
+        'hero-1': "url(img/hero-image-1.jpg)",
+        'hero-2': "url(img/hero-image-2.jpg)",
+        'news-1': "url(img/news-image-1.jpg)",
+        'news-2': "url(img/news-image-2.jpg)",
+        'news-3': "url(img/news-image-3.jpg)",
+      },
+      keyframes: {
+        horizontal: {
+         '0%': { transform: 'translateX(0%)' },
+         '50%': { transform: 'translateX(25%)' },
+         '100%': { transform: 'translateX(0%)' },
+       },
+        vertical: {
+          '0%': { transform: 'translateY(0%)' },
+          '50%': { transform: 'translateY(-25%)' },
+          '100%': { transform: 'translateY(0%)' },
+       },
+        back: {
+          '0%': { transform: 'translateX(0%)' },
+          '50%': { transform: 'translateX(-25%)' },
+          '100%': { transform: 'translateX(0%)' },
+       },
       },
       boxShadow: {
         'progress': '0px -10px 40px 0px rgba(0, 0, 0, 0.20)',

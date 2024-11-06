@@ -15,8 +15,7 @@ const FormService = ({onPrev , onNext, selectedValue, onSelectionChange}) => {
             <NewsHeader 
                 title="Which service are you looking for?" 
             />
-
-            <div className="mt-10 lg:mt-16 mx-4 md:mx-8 lg:mx-28 2xl:max-w-screen-2xl lg:mx-auto">
+            <div className="mt-10 lg:mt-16">
                 <RadioGroup className="gap-4 lg:gap-6">
                     {
                         questions.service.map((form) => (
@@ -80,7 +79,7 @@ const FormService = ({onPrev , onNext, selectedValue, onSelectionChange}) => {
                 </RadioGroup>
             </div>
 
-            <div className="flex flex-row items-center justify-center mt-8 lg:mt-10 mx-4 md:mx-8 lg:mx-28 2xl:max-w-screen-2xl lg:mx-auto gap-4 lg:gap-6">
+            <div className="flex flex-row items-center justify-center mt-8 lg:mt-10 gap-4 lg:gap-6">
                 <div className="w-full">
                     <div onClick={onPrev}>
                         <BtnBack title="back"/>
