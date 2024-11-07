@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/git-global/static/css/main.28a8390c.css",
-    "main.js": "/git-global/static/js/main.6cd03744.js",
+    "main.js": "/git-global/static/js/main.72d42179.js",
     "static/media/message-gif.gif": "/git-global/static/media/message-gif.78553ad695d62524bdd4.gif",
     "static/media/immigration.png": "/git-global/static/media/immigration.441e3bad75b2e0ab30c0.png",
     "static/media/news-image-2.jpg": "/git-global/static/media/news-image-2.ceb0e9c04d5a00bf1928.jpg",
@@ -15,10 +15,10 @@
     "static/media/hero-image-2.jpg": "/git-global/static/media/hero-image-2.91603f5262d9623ffec5.jpg",
     "index.html": "/git-global/index.html",
     "main.28a8390c.css.map": "/git-global/static/css/main.28a8390c.css.map",
-    "main.6cd03744.js.map": "/git-global/static/js/main.6cd03744.js.map"
+    "main.72d42179.js.map": "/git-global/static/js/main.72d42179.js.map"
   },
   "entrypoints": [
     "static/css/main.28a8390c.css",
-    "static/js/main.6cd03744.js"
+    "static/js/main.72d42179.js"
   ]
 }
