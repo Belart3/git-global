@@ -85,6 +85,7 @@ module.exports = {
         '30': '30px',
         '32': '32px',
         '24': '24px',
+        '27': '27px',
         '28': '28px',
         '34': '34px',
         '38': '38px',
@@ -94,6 +95,7 @@ module.exports = {
       },
       fontSize: {
         '12': '12px',
+        '18': '18px',
         '20': '20px',
         '28': '28px',
         '32': '32px',
@@ -110,6 +112,7 @@ module.exports = {
         'immigration-section': "url(img/immigration.png)",
         'dotted-line': "url(img/dotted-line.png)",
         'hero-1': "url(img/hero-image-1.jpg)",
+        'gif': "url(img/message-gif.gif)",
         'hero-2': "url(img/hero-image-2.jpg)",
         'news-1': "url(img/news-image-1.jpg)",
         'news-2': "url(img/news-image-2.jpg)",

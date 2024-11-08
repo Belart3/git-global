@@ -1,4 +1,5 @@
 import Logo from "./Logo";
+import Hamburger from 'hamburger-react'
 import NavLink from "./NavLink";
 import {linkcont} from "../data/NavLinks"
 import BtnBlue from "./BtnBlue";
@@ -14,7 +15,7 @@ const Navbar = () => {
         setShowDropDown(!showDropDown);
     };
     return ( 
-        <nav className="flex flex-row justify-between items-center py-2 px-4 md:px-8  lg:px-20 max-w-screen-2xl 2xl:px-0 mx-auto fixed top-0 inset-x-0 z-50 bg-Background h-20">
+        <nav className="flex flex-row justify-between items-center py-2 px-4 md:px-8  lg:px-20 max-w-screen-2xl 2xl:px-0 mx-auto fixed top-0 inset-x-0 z-40 bg-Background h-20">
 
             <Link to="/">
                 <Logo />
@@ -34,8 +35,8 @@ const Navbar = () => {
                 </div>
             </div>
 
-            <button className="h-12 w-12 bg-BL500 p-2 cursor-pointer sm:block md:hidden" onClick={toggleDropDown}>
-                <img src="images/menu-open.png" alt="" className="h-full w-full"/>
+            <button className="h-12 w-12 bg-BL500 cursor-pointer sm:block md:hidden flex items-center justify-center" onClick={toggleDropDown}>
+                <Hamburger color="#ffff" />
             </button>
 
             {showDropDown ? (

@@ -19,47 +19,34 @@ const FormPage = ( ) => {
         address: '',
         contactMethod: '',
     })
-    const userName = formData.userName;
-    const userEmail = formData.userEmail;
-    const phoneNumber = formData.phoneNumber;
-    const address = formData.address;
-    const contactMethod = formData.contactMethod;
-    const citizenshipSelection = formData.citizenshipSelection;
-    const formServiceSelection = formData.formServiceSelection;
-
     const form = useRef();
-
     const sendEmail = (e) => {
-      e.preventDefault();
-  
-      emailjs
-        .sendForm(
-            'service_a5qhz9b', 
-            'template_21n13ib', 
-            form.current, 
-            {
-          publicKey: 'hbHBFpUs0m9_O0fCA',
-        })
-        .then(
-          () => {
-            console.log('SUCCESS!');   
-            console.log(
-                userName
-            )
-          },
-          (error) => {
-            console.log('FAILED...', error.text);
-          },
-        );
+        e.preventDefault()
+        const templateParams = {
+            citizenship: formData.citizenshipSelection,
+            service: formData.formServiceSelection,
+            name: formData.userName,
+            email: formData.userEmail,
+            phone: formData.phoneNumber,
+            address: formData.address,
+            contactMethod: formData.contactMethod,
+        };
+        emailjs.send(
+            'service_a5qhz9b',
+            'template_21n13ib',
+            templateParams,
+            'hbHBFpUs0m9_O0fCA'
+        ).then((response) => {
+            console.log('SUCCESS!', response.status, response.text);
+        }).catch((error) => {
+            console.log('FAILED...', error);
+        });
     };
 
     const handleNextStep = () => {
         if( currentStep < totalSteps){
             setCurrentStep(currentStep + 1);
-        }   
-        console.log(
-            userName
-        )
+        }
     };
     const handlePrevStep = () => {
         if (currentStep > 1 ){
@@ -77,7 +64,7 @@ const FormPage = ( ) => {
     }, []);
 
     return(
-        <div className="w-full bg-Background ">
+        <div className="w-full bg-Background">
             <div className="pt-[88px] lg:pt-36 mx-4 max-w-screen-md md:mx-auto">
                 <div className="flex space-x-4 lg:space-x-6 mb-16 lg:mb-[100px]">
                     <div className="flex-1">
@@ -97,8 +84,7 @@ const FormPage = ( ) => {
                         </div>
                     </div>
                 </div>
-                <form className="w-full" ref={form} onSubmit={sendEmail}>
-                    {/* onSubmit={sendEmail} */}
+                <form className="w-full" onSubmit={sendEmail} ref={form}>
                     {(() => {
                         switch (currentStep) {
                             case 1:
