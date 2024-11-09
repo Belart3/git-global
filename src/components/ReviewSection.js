@@ -5,7 +5,7 @@ import { Link } from "react-router-dom/cjs/react-router-dom";
 
 const ReviewSection = () => {
     return ( 
-        <section className="grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-5 gap-4 lg:gap-0 sm:mx-4 md:mx-8 lg:mx-20 max-w-screen-2xl 2xl:px-0 2xl:mx-auto bg-Background xl:h-1044">
+        <section className="grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-5 gap-4 lg:gap-0 sm:mx-4 md:mx-8 lg:mx-20 max-w-screen-2xl px-0 2xl:px-20 2xl:mx-auto bg-Background xl:h-1044">
           
             <div className="w-off-16  flex flex-col bg-PE500 place-self-start max-w-lg lg:max-w-none  lg:row-span-3 lg:order-2 lg:place-self-end lg:w-full">
                 <div className="bg-Background w-fit p-4 lg:py-6 lg:px-10 ">

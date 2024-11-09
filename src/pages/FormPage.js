@@ -65,7 +65,7 @@ const FormPage = ( ) => {
 
     return(
         <div className="w-full bg-Background">
-            <div className="pt-[88px] lg:pt-36 mx-4 max-w-screen-md md:mx-auto">
+            <div className="pt-[88px] lg:pt-36 mx-4 max-w-screen-md px-0 md:px-8 md:mx-auto">
                 <div className="flex space-x-4 lg:space-x-6 mb-16 lg:mb-[100px]">
                     <div className="flex-1">
                         <div className="relative h-full">

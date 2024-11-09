@@ -5,7 +5,6 @@ import { Radio, RadioGroup, FormControlLabel, Typography } from '@mui/material';
 import { questions } from "../data/FormQuestions";
 import ScrollToTop from "./ScrollToTop";
 import { useState } from "react";
-import { Email, Home } from "@mui/icons-material";
   
 
 const FinalForm = ({onNext, onPrev, selectedMethod, onSelectionChange}) => {

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom/cjs/react-router-dom";
 const Header = () => {
     return ( 
         <header className="w-full">
-            <div className="flex flex-col md:flex-row items-center justify-between mx-4 md:mx-8 lg:mx-20 max-w-screen-2xl 2xl:px-0 2xl:mx-auto gap-y-10 xl:gap-x-20 pt-28 lg:h-screen lg:max-h-800 lg:min-h-700">
+            <div className="flex flex-col md:flex-row items-center justify-between mx-4 md:mx-8 lg:mx-20 max-w-screen-2xl px-0 2xl:px-20 2xl:mx-auto gap-y-10 xl:gap-x-20 pt-28 lg:h-screen lg:max-h-800 lg:min-h-700">
                 
                 <div className=" space-y-8 w-full md:w-1/2 lg:w-48">
                     <h2 className="text-5xl lg:text-6xl font-normal text-B500 swear-text">
