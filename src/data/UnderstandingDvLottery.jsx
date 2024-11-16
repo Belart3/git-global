@@ -18,7 +18,7 @@ export const PageData = {
     },
     {
         heading: "What is the DV Lottery?",
-        id: 1,
+        id: 2,
         text: [
             {
                 id: 1,

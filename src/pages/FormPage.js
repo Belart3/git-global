@@ -32,10 +32,10 @@ const FormPage = ( ) => {
             contactMethod: formData.contactMethod,
         };
         emailjs.send(
-            'service_a5qhz9b',
-            'template_21n13ib',
+            'service_3mt1bv3',
+            'template_1ld5qg9',
             templateParams,
-            'hbHBFpUs0m9_O0fCA'
+            '7oXabLpRDdIuOv6Pm'
         ).then((response) => {
             console.log('SUCCESS!', response.status, response.text);
         }).catch((error) => {

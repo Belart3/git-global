@@ -13,7 +13,12 @@ const Navbar = () => {
 
     const toggleDropDown = () => {
         setShowDropDown(!showDropDown);
+        console.log("clicked dropdown")
     };
+    const delayedToggle = () => {
+        setTimeout(toggleDropDown(), 500);
+    }
+
     return ( 
         <nav className="flex flex-row justify-between items-center py-2 px-5 md:px-8 lg:px-20 max-w-screen-2xl mx-auto fixed top-0 inset-x-0 z-40 bg-Background h-20">
 
@@ -23,7 +28,7 @@ const Navbar = () => {
 
             <ul className="hidden items-center justify-center md:flex">
                     {linkcont.map((data) => (
-                        <NavLink src={data.src} key={data.id} title={data.title}  href={data.href} onToggle={toggleDropDown} />
+                        <NavLink src={data.src} key={data.id} title={data.title}  href={data.href} onClick={delayedToggle} />
                     ))}
             </ul> 
 

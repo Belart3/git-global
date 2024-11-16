@@ -1,11 +1,14 @@
 import { footerData } from "../data/FooterData";
-import { Link } from "react-router-dom/cjs/react-router-dom";
+import { Link,  useLocation } from "react-router-dom/cjs/react-router-dom";
 
 const Footer = () => {
+    const location = useLocation();
+    const homePage = location.pathname === '/';
+    
     return (  
         <footer className="bg-BL500 mt-[88px] lg:mt-36 ">
             <div className="px-0 2xl:px-20 max-w-screen-2xl mx-auto " >
-                <div className="flex flex-col gap-10 lg:gap-0 lg:flex-row items-start justify-between px-5 md:px-8 pb-32 !md:pb-36 py-10 lg:px-20 lg:pt-20 2xl:px-0">
+                <div className={`flex flex-col gap-10 lg:gap-0 lg:flex-row items-start justify-between px-5 md:px-8 py-10 lg:px-20 lg:pt-20 2xl:px-0 ${homePage ? 'pb-32 !md:pb-36' : ''}`}>
 
     <div className="flex flex-col gap-8 w-full lg:w-2/12">
         <ul className="flex flex-col items-start gap-5">

@@ -14,7 +14,7 @@ const GuideToFamlyImmigration = () => {
     return (  
         <div className="w-full bg-Background pt-[88px] lg:pt-36">
             <div className="flex flex-col gap-10 lg:gap-16">
-                <div className="mx-4 md:mx-8 max-w-screen-lg lg:mx-auto">
+                <div className="mx-4 md:mx-8 max-w-screen-lg lg:mx-auto px-0 lg:px-20 xl:px-0">
                     <NewsHeader 
                     title="How to Study in the U.S.: Your Guide to Getting a Student Visa"
                     date="October 30, 2024"
@@ -22,7 +22,7 @@ const GuideToFamlyImmigration = () => {
                     />
                 </div>
                 <div>
-                    <div className="flex flex-col gap-10 lg:gap-16  mx-4 md:mx-8 max-w-screen-lg 2xl:px-0 lg:mx-auto mb-32">
+                    <div className="flex flex-col gap-10 lg:gap-16  mx-4 md:mx-8 max-w-screen-lg 2xl:px-0 lg:mx-auto px-0 lg:px-20 xl:px-0 mb-32">
                         <div className="w-full bg-news-1 bg-center lg:bg-top bg-cover bg-no-repeat h-80 lg:h-500"></div>
 
                         <div className="flex flex-col gap-14 lg:gap-20">
@@ -72,7 +72,7 @@ const GuideToFamlyImmigration = () => {
                                     }
                                 </div> 
                                 <div className="flex flex-col gap-8  p-5 lg:p-10 border border-B75 bg-white items-center justify-center">
-                                    <h3 className="swear-text text-28/34 lg:text-32/38 text-B500 capitalize">
+                                    <h3 className="swear-text text-28/34 lg:text-32/38 text-B400 text-center">
                                         Ready to start your family’s immigration process?
                                     </h3>
                                     <p className="ibm-plex-sans-regular text-20/30 font-normal text-B400">

@@ -10,6 +10,8 @@ import FormPage from './pages/FormPage';
 import GuideToFamlyImmigration from './pages/GuideToFamilyImmigration';
 import UnderstandingDvLottery from './pages/UnderstandingDvLottery';
 import StudentVisa from './pages/StudentVisa';
+import TrumpAndImmigration from './pages/TrumpAndImmigration';
+import K1Fiance from './pages/K1Fiance';
 
 
 function App() {
@@ -37,6 +39,14 @@ function App() {
             {/* path to the Guide to how to apply for student visa page */}
             <Route path="/student-visa">
               <StudentVisa />
+            </Route>
+            {/*  */}
+            <Route path="/trump-and-immigration">
+              <TrumpAndImmigration />
+            </Route>
+            {/*  */}
+            <Route path="/k1-fiance-visa">
+              <K1Fiance />
             </Route>
             {/* path to the form page */}
             <Route path="/form">

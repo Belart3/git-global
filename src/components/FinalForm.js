@@ -113,15 +113,14 @@ const FinalForm = ({onNext, onPrev, selectedMethod, onSelectionChange}) => {
             {
                 message ? 
                 <div className=" h-screen w-screen fixed top-0 left-0 flex flex-col items-center justify-center bg-black bg-opacity-50 z-50 ">
-                    <div className=" w-90 sm:w-500 bg-white h-500 z-50 opacity-100 relative ">
+                    <div className=" w-90 sm:w-500 bg-white h-300 z-50 opacity-100 relative flex items-center justify-center ">
                         <button className="pointer absolute top-5 right-5" onClick={call}>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" className="">
-                            <path d="M4.11611 18.116C3.62796 18.6041 3.62796 19.3956 4.11611 19.8838C4.60427 20.3719 5.39573 20.3719 5.88388 19.8838L19.8839 5.88376C20.3721 5.39561 20.3721 4.60415 19.8839 4.11599C19.3958 3.62784 18.6043 3.62784 18.1161 4.11599L4.11611 18.116Z" fill="white"/>
-                            <path d="M5.88388 4.11599C5.39573 3.62784 4.60427 3.62784 4.11611 4.11599C3.62796 4.60415 3.62796 5.39561 4.11611 5.88376L18.1161 19.8838C18.6042 20.3719 19.3957 20.3719 19.8838 19.8838C20.372 19.3956 20.372 18.6041 19.8838 18.116L5.88388 4.11599Z" fill="white"/>
+                            <path d="M4.11611 18.116C3.62796 18.6041 3.62796 19.3956 4.11611 19.8838C4.60427 20.3719 5.39573 20.3719 5.88388 19.8838L19.8839 5.88376C20.3721 5.39561 20.3721 4.60415 19.8839 4.11599C19.3958 3.62784 18.6043 3.62784 18.1161 4.11599L4.11611 18.116Z" fill="black"/>
+                            <path d="M5.88388 4.11599C5.39573 3.62784 4.60427 3.62784 4.11611 4.11599C3.62796 4.60415 3.62796 5.39561 4.11611 5.88376L18.1161 19.8838C18.6042 20.3719 19.3957 20.3719 19.8838 19.8838C20.372 19.3956 20.372 18.6041 19.8838 18.116L5.88388 4.11599Z" fill="black"/>
                             </svg>
                         </button>
-                        <div className="bg-gif bg-cover bg-center h-1/2"></div>
-                        <div className="h-1/2 flex flex-col items-start justify-center gap-6 lg:gap-8 p-5 lg:p-8">
+                        <div className="flex flex-col items-start justify-center gap-6 lg:gap-8 p-5 lg:p-8">
                             <h4 className="swear-text capitalize text-48/48 lg:text-64/64 text-start">
                                 thank you!
                             </h4>
