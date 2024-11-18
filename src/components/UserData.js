@@ -46,7 +46,7 @@ const UserData = ({onNext, onPrev, userName, userEmail ,phoneNumber , address, s
             />
 
             <div className="w-full">
-                <div className="mt-10 lg:mt-16 space-y-4 space-y-6">
+                <div className="mt-10 lg:mt-16 space-y-4 lg:space-y-6">
                     <FormInput 
                         id="userName"
                         type="text"

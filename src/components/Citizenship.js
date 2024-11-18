@@ -44,7 +44,7 @@ const Citizenship = ({onPrev , onNext, selectedValue, onSelectionChange,}) => {
                                     />
                                 }
                                 label={
-                                    <Typography className=" ibm-plex-sans-regular !text-lg/20 lg:!text-20/24 !text-B500" >
+                                    <Typography className=" ibm-plex-sans-regular !text-base/20 lg:!text-20/24 !text-B500" >
                                         {form.label}
                                     </Typography>
                                 }

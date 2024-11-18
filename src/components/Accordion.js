@@ -5,6 +5,7 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import PlusIcon from './PlusIcon';
 import MinusIcon from './MinusIcon';
+import { Typography } from '@mui/material';
 
 export default function AccordionUsage({question, answer}) {
     const [expanded, setExpanded] = useState(false); // Track expanded state
@@ -20,18 +21,20 @@ export default function AccordionUsage({question, answer}) {
 
         <AccordionSummary
         expandIcon={expanded ? <MinusIcon /> : <PlusIcon />}
-        aria-controls="panel1-content" id="panel1-header" className='!px-0 !text-xl ibm-plex-sans-regular'
+        aria-controls="panel1-content" id="panel1-header" className='!px-0 !text-base lg:text-20/30 ibm-plex-sans-regular'
         sx={{
             '& .MuiAccordionSummary-content': {
               margin: '0px',
             },
         }}
         >
-            {question}
+          <Typography className='!px-0 !text-base lg:!text-20/30 ibm-plex-sans-regular'>
+          {question}
+          </Typography>
         </AccordionSummary>
 
         <AccordionDetails
-        className='!py-0 text-B400 text-xl ibm-plex-sans-regular'
+        className='!py-0 text-B400 !text-base lg:!text-20/30 ibm-plex-sans-regular'
         >
           {answer}
         </AccordionDetails>

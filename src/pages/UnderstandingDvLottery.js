@@ -30,7 +30,7 @@ const UnderstandindDvLottery = ( ) => {
                             {
                                 PageData.introduction.map((section) => (
                                     <div className="flex flex-col gap-8 lg:gap-10" key={section.id}>
-                                        <h3 className="swear-text text-28/34 lg:text-32/38 text-B500 capitalize">
+                                        <h3 className="swear-text text-2xl/28 lg:text-32/38 text-B500 capitalize">
                                             {section.heading}
                                         </h3>
                                         {
@@ -44,20 +44,20 @@ const UnderstandindDvLottery = ( ) => {
                             {
                                 PageData.bridge.map((section) => (
                                     <div className="flex flex-col gap-8 lg:gap-10" key={section.id}>
-                                        <h3 className="swear-text text-28/34 lg:text-32/38 text-B500 capitalize">
+                                        <h3 className="swear-text text-2xl/28 lg:text-32/38 text-B500 capitalize">
                                             {section.heading}
                                         </h3>
-                                        <p className="ibm-plex-sans-regular text-lg lg:text-20/30 font-normal text-B400">
+                                        <p className="ibm-plex-sans-regular text-base lg:text-20/30 font-normal text-B400">
                                             {section.subheading}
                                         </p>
                                         <div className="flex flex-col gap-8 lg:gap-10">
                                             {
                                                 section.text.map((section) => (
                                                     <div key={section.id}>
-                                                        <li className="text-lg lg:text-20/30 ibm-plex-sans-bold text-B400 ms-4 list-disc">
+                                                        <li className="text-base lg:text-20/30 ibm-plex-sans-bold text-B400 ms-4 list-disc">
                                                             {section.subtitle}
                                                         </li>
-                                                        <p className="ibm-plex-sans-regular text-lg lg:text-20/30 font-normal text-B400">
+                                                        <p className="ibm-plex-sans-regular text-base lg:text-20/30 font-normal text-B400">
                                                             {section.body}
                                                         </p>
                                                     </div>
@@ -70,18 +70,18 @@ const UnderstandindDvLottery = ( ) => {
                             {
                                 PageData.howToApply.map((section) => (
                                     <div key={section.id} className="flex flex-col gap-8 lg:gap-10">
-                                        <h3 className="swear-text text-28/34 lg:text-32/38 text-B500 capitalize">{section.heading}</h3>
-                                        <p className="ibm-plex-sans-regular text-20/30 font-normal text-B400">
+                                        <h3 className="swear-text text-2xl/28 lg:text-32/38 text-B500 capitalize">{section.heading}</h3>
+                                        <p className="ibm-plex-sans-regular text-base lg:text-20/30 font-normal text-B400">
                                             {section.subheading}
                                         </p>
                                         {section.procedures.map((procedure) => (
                                             <div key={procedure.id} className="flex flex-col">
-                                                <h4 className="ibm-plex-sans-bold text-lg lg:text-20/30 text-B400">
+                                                <p className="ibm-plex-sans-bold text-base lg:text-20/30 text-B400">
                                                     {procedure.title}
-                                                </h4>
+                                                </p>
                                                 <ul className="flex flex-col list-disc space-y-2">
                                                     {procedure.steps.map((steps) => (
-                                                        <li key={steps.id} className="text-lg lg:text-20/30 ibm-plex-sans-regular text-B400 ms-8 lg:ms-10">
+                                                        <li key={steps.id} className="text-base lg:text-20/30 ibm-plex-sans-regular text-B400 ms-8 lg:ms-10">
                                                             {steps.text}
                                                         </li>
                                                     ))}
@@ -94,10 +94,10 @@ const UnderstandindDvLottery = ( ) => {
                             {
                                 PageData.afterApplication.map((section) => (
                                     <div key={section.id} className="flex flex-col gap-8 lg:gap-10">
-                                        <h3 className="swear-text text-28/34 lg:text-32/38 text-B500 capitalize">{section.heading}</h3>
+                                        <h3 className="swear-text text-2xl/28 lg:text-32/38 text-B500 capitalize">{section.heading}</h3>
                                         {
                                             section.subheading &&
-                                            <p className="ibm-plex-sans-regular text-20/30 font-normal text-B400">
+                                            <p className="ibm-plex-sans-regular text-base lg:text-20/30 font-normal text-B400">
                                                 {section.subheading}
                                             </p>
                                         }
@@ -105,13 +105,13 @@ const UnderstandindDvLottery = ( ) => {
                                             <div key={procedure.id} className="flex flex-col">
                                                 {
                                                     procedure.title &&
-                                                    <h4 className="ibm-plex-sans-bold text-lg lg:text-20/30 text-B400">
+                                                    <p className="ibm-plex-sans-bold text-base lg:text-20/30 text-B400">
                                                         {procedure.title}
-                                                    </h4>
+                                                    </p>
                                                 }
                                                 <ul className="flex flex-col list-disc space-y-2">
                                                     {procedure.steps.map((steps) => (
-                                                        <li key={steps.id} className="text-lg lg:text-20/30 ibm-plex-sans-regular text-B400 ms-8 lg:ms-10">
+                                                        <li key={steps.id} className="text-base lg:text-20/30 ibm-plex-sans-regular text-B400 ms-8 lg:ms-10">
                                                             {steps.text}
                                                         </li>
                                                     ))}
@@ -125,7 +125,7 @@ const UnderstandindDvLottery = ( ) => {
                                 {
                                     PageData.howGitHelps.map((section) => (
                                         <div className="flex flex-col gap-8 lg:gap-10" key={section.id}>
-                                            <h3 className="swear-text text-28/34 lg:text-32/38 text-B500 capitalize">
+                                            <h3 className="swear-text text-2xl/28 lg:text-32/38 text-B500 capitalize">
                                                 {section.heading}
                                             </h3>
                                             {
@@ -137,13 +137,13 @@ const UnderstandindDvLottery = ( ) => {
                                     ))
                                 }
                                 <div className="flex flex-col gap-8  p-5 lg:p-10 border border-B75 bg-white items-center justify-center">
-                                    <h3 className="swear-text text-28/34 lg:text-32/38 text-B400 text-center">
+                                    <h3 className="swear-text text-2xl/28 lg:text-32/38 text-B400 text-center">
                                         Want to take your chance at winning a Green Card?
                                     </h3>
-                                    <p className="ibm-plex-sans-regular text-20/30 font-normal text-B400">
+                                    <p className="ibm-plex-sans-regular text-base lg:text-20/30 font-normal text-B400">
                                         Click the  
                                         <Link to="/form">
-                                            <span className="text-BL500 font-bold ibm-plex-sans-bold text-20/30 px-1">
+                                            <span className="text-BL500 font-bold ibm-plex-sans-bold text-base lg:text-20/30 px-1">
                                                 Get Started
                                             </span>
                                         </Link>
@@ -153,7 +153,7 @@ const UnderstandindDvLottery = ( ) => {
                                 {
                                     PageData.conclusion.map((section) => (
                                         <div className="flex flex-col gap-8 lg:gap-10" key={section.id}>
-                                            <h3 className="swear-text text-28/34 lg:text-32/38 text-B500 capitalize">
+                                            <h3 className="swear-text text-2xl/28 lg:text-32/38 text-B500 capitalize">
                                                 {section.heading}
                                             </h3>
                                             {
@@ -170,7 +170,7 @@ const UnderstandindDvLottery = ( ) => {
                     <section className="flex flex-col mx-4 md:mx-8 lg:mx-20 max-w-screen-2xl 2xl:px-0 2xl:mx-auto gap-y-10 xl-gap-16">
                         <SectionHeading title="other News & Reports" src="images/notification.svg"/>
                         <News 
-                        currentPage={currentPage}                        />
+                        currentPage={currentPage} />
                     </section>
                 </div>
             </div>

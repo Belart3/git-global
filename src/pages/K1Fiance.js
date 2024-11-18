@@ -28,7 +28,7 @@ const K1Fiance = () => {
                             {
                             PageData.introduction.map((data) => (
                                 <div className="flex flex-col gap-8 lg:gap-10" key={data.id}>
-                                    <h3 className="swear-text text-28/34 lg:text-32/38 text-B500 capitalize">
+                                    <h3 className="swear-text text-2xl/28 lg:text-32/38 text-B500 capitalize">
                                     {data.heading}
                                     </h3>
                                     {
@@ -42,16 +42,16 @@ const K1Fiance = () => {
                             {
                             PageData.whatIsK1Fiance.map((data) => (
                                 <div className="flex flex-col gap-8 lg:gap-10" key={data.id}>
-                                    <h3 className="swear-text text-28/34 lg:text-32/38 text-B500 capitalize">
+                                    <h3 className="swear-text text-2xl/28 lg:text-32/38 text-B500 capitalize">
                                     {data.heading}
                                     </h3>
                                     {
                                         data.text.map((data)=> (
-                                            <p className="ibm-plex-sans-regular text-20/30 font-normal text-B400" key={data.id}>
+                                            <p className="ibm-plex-sans-regular text-base lg:text-20/30 font-normal text-B400" key={data.id}>
                                                 {data.opening}
                                             {
                                                 data.bold && 
-                                                <span className="ibm-plex-sans-bold text lg:text-20/30 text-B400 px-2">
+                                                <span className="ibm-plex-sans-bold text-base lg:text-20/30 text-B400 px-2">
                                                     {data.bold}
                                                 </span> 
                                             }
@@ -65,14 +65,14 @@ const K1Fiance = () => {
                             {
                             PageData.eligibilityRequirements.map((section) => (
                                 <div key={section.id} className="flex flex-col gap-8 lg:gap-10">
-                                    <h3 className="swear-text text-28/34 lg:text-32/38 text-B500 capitalize">{section.heading}</h3>
-                                    <p className="ibm-plex-sans-regular text-lg lg:text-20/30 text-B400">
+                                    <h3 className="swear-text text-2xl/28 lg:text-32/38 text-B500 capitalize">{section.heading}</h3>
+                                    <p className="ibm-plex-sans-regular text-base lg:text-20/30 text-B400">
                                         {section.subheading}
                                     </p>
                                     <div className="flex flex-col">
                                         <ul className="list-disc">
                                             {section.requirements.map((requirement) => (
-                                                <li className="ibm-plex-sans-bold text-lg lg:text-20/30 text-B400 ms-8" key={requirement.id}>
+                                                <li className="ibm-plex-sans-bold text-base lg:text-20/30 text-B400 ms-8" key={requirement.id}>
                                                     <NewsIntroduction subtitle={requirement.bold} body={requirement.normal} key={requirement.id}/> 
                                                 </li>
                                             ))}
@@ -84,28 +84,28 @@ const K1Fiance = () => {
                             {
                             PageData.guideToK1Visa.map((guide) => (
                                 <div key={guide.id} className="flex flex-col gap-8 lg:gap-10">
-                                    <h3 className="swear-text text-28/34 lg:text-32/38 text-B500 capitalize">{guide.heading}</h3>
+                                    <h3 className="swear-text text-2xl/28 lg:text-32/38 text-B500 capitalize">{guide.heading}</h3>
                                     <div className="flex flex-col">
                                         <ul className="flex flex-col gap-8">
                                             {guide.steps.map((procedure, index) => (
-                                                <li className="ibm-plex-sans-bold text-lg lg:text-20/30 text-B400 flex flex-col gap-8" key={procedure.id}>
+                                                <li className="ibm-plex-sans-bold text-base lg:text-20/30 text-B400 flex flex-col gap-8" key={procedure.id}>
                                                     <div>
-                                                        <p className="ibm-plex-sans-bold text-lg lg:text-20/30 text-B400">
+                                                        <p className="ibm-plex-sans-bold text-base lg:text-20/30 text-B400">
                                                             {index + 1 }. {procedure.heading}
                                                         </p>
-                                                        <p className="ibm-plex-sans-regular text-lg lg:text-20/30 text-B400">
+                                                        <p className="ibm-plex-sans-regular text-base lg:text-20/30 text-B400">
                                                             {procedure.body}
                                                         </p>
                                                     </div>
                                                     <div className="flex flex-col">
                                                         {procedure.requiredDocuments.map((docs) => (
                                                             <ul className="list-disc" key={docs.id}>
-                                                                <p className="ibm-plex-sans-bold text-lg lg:text-20/30 text-B400">
+                                                                <p className="ibm-plex-sans-bold text-base lg:text-20/30 text-B400">
                                                                 {docs.heading}
                                                                 </p>
                                                                 {
                                                                 docs.documents.map((doc) => (
-                                                                <li className="ibm-plex-sans-regular text-lg lg:text-20/30 text-B400 ms-8" key={doc.id}>
+                                                                <li className="ibm-plex-sans-regular text-base lg:text-20/30 text-B400 ms-8" key={doc.id}>
                                                                 {doc.info}
                                                                 </li>
                                                                 ))
@@ -129,12 +129,12 @@ const K1Fiance = () => {
                             {
                             PageData.commonChallenges.map((challenges) => (
                                 <div className="flex flex-col gap-8 lg:gap-10" key={challenges.id}>
-                                    <h3 className="swear-text text-28/34 lg:text-32/38 text-B500 capitalize">
+                                    <h3 className="swear-text text-2xl/28 lg:text-32/38 text-B500 capitalize">
                                     {challenges.heading}
                                     </h3>
                                     {
                                         challenges.subheading &&
-                                        <p className="ibm-plex-sans-regular text-20/30 font-normal text-B400">
+                                        <p className="ibm-plex-sans-regular text-base lg:text-20/30 font-normal text-B400">
                                             {challenges.subheading}
                                         </p>
                                     }
@@ -148,13 +148,13 @@ const K1Fiance = () => {
                             }
                         </div>
                         <div className="flex flex-col gap-8 p-5 lg:p-10 border border-B75 bg-white items-center justify-center">
-                            <h3 className="swear-text text-28/34 lg:text-32/38 text-B400 text-center">
+                            <h3 className="swear-text text-2xl/28 lg:text-32/38 text-B400 text-center">
                                 Ready to bring your fiancé to the U.S. and start your life together?
                             </h3>
-                            <p className="ibm-plex-sans-regular text-20/30 font-normal text-B400 text-center">
+                            <p className="ibm-plex-sans-regular text-base lg:text-20/30 font-normal text-B400 text-center">
                                 Click the  
                                 <Link to="/form">
-                                    <span className="text-BL500 font-bold ibm-plex-sans-bold text-20/30 px-1">
+                                    <span className="text-BL500 font-bold ibm-plex-sans-bold text-base lg:text-20/30 px-1">
                                         Get Started
                                     </span>
                                 </Link>

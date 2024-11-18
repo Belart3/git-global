@@ -28,7 +28,7 @@ const TrumpAndImmigration = () => {
                             {
                                 PageData.introduction.map((data) => (
                                     <div className="flex flex-col gap-8 lg:gap-10" key={data.id}>
-                                        <h3 className="swear-text text-28/34 lg:text-32/38 text-B500 capitalize">
+                                        <h3 className="swear-text text-2xl/28 lg:text-32/38 text-B500 capitalize">
                                         {data.heading}
                                         </h3>
                                         {
@@ -42,17 +42,17 @@ const TrumpAndImmigration = () => {
                             {
                                 PageData.potentialChanges.map((section) => (
                                     <div key={section.id} className="flex flex-col gap-8 lg:gap-10">
-                                        <h3 className="swear-text text-28/34 lg:text-32/38 text-B500 capitalize">{section.heading}</h3>
+                                        <h3 className="swear-text text-2xl/28 lg:text-32/38 text-B500 capitalize">{section.heading}</h3>
                                         <div className="flex flex-col">
                                             <ol className="list-decimal space-y-8">
                                                 {section.procedures.map((procedure) => (
-                                                    <li className="ibm-plex-sans-bold text-lg lg:text-20/30 text-B400 space-y-8 ms-8" key={procedure.id}>
-                                                        <p className="ibm-plex-sans-bold text-lg lg:text-20/30 text-B400">
+                                                    <li className="ibm-plex-sans-bold text-base lg:text-20/30 text-B400 space-y-8 ms-8" key={procedure.id}>
+                                                        <p className="ibm-plex-sans-bold text-base lg:text-20/30 text-B400">
                                                             {procedure.title}
                                                         </p>
                                                         <ul className="flex flex-col list-disc space-y-8">
                                                             {procedure.steps.map((step) => (
-                                                            <li key={step.id} className="text-lg lg:text-20/30 ibm-plex-sans-regular text-B400">                                  {step.text}
+                                                            <li key={step.id} className="text-base lg:text-20/30 ibm-plex-sans-regular text-B400">                                  {step.text}
                                                                 <NewsIntroduction subtitle={step.subtitle} body={step.body} key={step.id}/>  
                                                             </li>
                                                             ))}
@@ -69,10 +69,10 @@ const TrumpAndImmigration = () => {
                                     {
                                         PageData.afterApplication.map((data) => (
                                             <div className="flex flex-col gap-8 lg:gap-10" key={data.id}>
-                                                <h3 className="swear-text text-28/34 lg:text-32/38 text-B500 capitalize">
+                                                <h3 className="swear-text text-2xl/28 lg:text-32/38 text-B500 capitalize">
                                                 {data.heading}
                                                 </h3>
-                                                <p className="ibm-plex-sans-regular text-20/30 font-normal text-B400">
+                                                <p className="ibm-plex-sans-regular text-base lg:text-20/30 font-normal text-B400">
                                                 {data.subheading}
                                                 </p>
                                                 {
@@ -85,13 +85,13 @@ const TrumpAndImmigration = () => {
                                     }
                                 </div>
                                 <div className="flex flex-col gap-8  p-5 lg:p-10 border border-B75 bg-white items-center justify-center">
-                                    <h3 className="swear-text text-28/34 lg:text-32/38 text-B400 text-center">
+                                    <h3 className="swear-text text-2xl/28 lg:text-32/38 text-B400 text-center">
                                         Need assistance with your immigration case?
                                     </h3>
-                                    <p className="ibm-plex-sans-regular text-20/30 font-normal text-B400">
+                                    <p className="ibm-plex-sans-regular text-base lg:text-20/30 font-normal text-B400">
                                         Click the  
                                         <Link to="/form">
-                                            <span className="text-BL500 font-bold ibm-plex-sans-bold text-20/30 px-1">
+                                            <span className="text-BL500 font-bold ibm-plex-sans-bold text-base lg:text-20/30 px-1">
                                                 Get Started
                                             </span>
                                         </Link>

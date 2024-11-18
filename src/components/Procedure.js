@@ -7,10 +7,10 @@ const Procedure = ({id,heading,paragraph}) => {
                 </p>
             </div>
             <div className="flex flex-col justify-center gap-4 items-start">
-                <h5 className="ibm-plex-sans-semibold text-B500 text-lg lg:text-20/38">
+                <h5 className="ibm-plex-sans-semibold text-B500 text-base lg:text-20/30">
                     {heading}
                 </h5>
-                <p className="text-base text-B400 ibm-plex-sans-regular">
+                <p className="text-sm/5 lg:text-sm/5 text-B400 ibm-plex-sans-regular">
                     {paragraph}
                 </p>
             </div>

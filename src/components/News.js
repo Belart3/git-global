@@ -17,7 +17,7 @@ const News = ({currentPage}) => {
                                 <h5 className="text-B300 text-xs/12 ibm-plex-sans-regular">
                                     {item.date}
                                 </h5>
-                                <p className="text-B500 text-lg/22 md:text-xl/24 ibm-plex-sans-regular capitalize lg:group-hover:underline">
+                                <p className="text-B500 text-base/20 md:text-xl/24 ibm-plex-sans-regular capitalize lg:group-hover:underline">
                                     {item.paragraph}
                                 </p>
                             </div>

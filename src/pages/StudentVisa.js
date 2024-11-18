@@ -28,7 +28,7 @@ const StudentVisa = () => {
                             {
                                 PageData.introduction.map((data) => (
                                     <div className="flex flex-col gap-8 lg:gap-10" key={data.id}>
-                                        <h3 className="swear-text text-28/34 lg:text-32/38 text-B500 capitalize">
+                                        <h3 className="swear-text text-2xl/28 lg:text-32/38 text-B500 capitalize">
                                         {data.heading}
                                         </h3>
                                         {
@@ -42,15 +42,15 @@ const StudentVisa = () => {
                             {
                                 PageData.howToApply.map((section) => (
                                     <div key={section.id} className="flex flex-col gap-8 lg:gap-10">
-                                        <h3 className="swear-text text-28/34 lg:text-32/38 text-B500 capitalize">{section.heading}</h3>
+                                        <h3 className="swear-text text-2xl/28 lg:text-32/38 text-B500 capitalize">{section.heading}</h3>
                                         {section.procedures.map((procedure) => (
                                             <div key={procedure.id} className="flex flex-col">
-                                                <h4 className="ibm-plex-sans-bold text-lg lg:text-20/30 text-B400">
+                                                <p className="ibm-plex-sans-bold text-base lg:text-20/30 text-B400">
                                                     {procedure.title}
-                                                </h4>
+                                                </p>
                                                 <ul className="flex flex-col list-disc space-y-2">
                                                     {procedure.steps.map((step) => (
-                                                        <li key={step.id} className="text-lg lg:text-20/30 ibm-plex-sans-regular text-B400 ms-8 lg:ms-10">
+                                                        <li key={step.id} className="text-base lg:text-20/30 ibm-plex-sans-regular text-B400 ms-8 lg:ms-10">
                                                             {step.text}
                                                         </li>
                                                     ))}
@@ -58,10 +58,10 @@ const StudentVisa = () => {
                                                 {
                                                     procedure.tips.map((section) => (
                                                         section && 
-                                                        <p className="ibm-plex-sans-regular text-20/30 font-normal text-B400 mt-8" key={section.id}>
+                                                        <p className="ibm-plex-sans-regular text-base lg:text-20/30 font-normal text-B400 mt-8" key={section.id}>
                                                             {
                                                                 section.title && 
-                                                                <span className="ibm-plex-sans-bold text lg:text-20/30 text-B400">
+                                                                <span className="ibm-plex-sans-bold text-base lg:text-20/30 text-B400">
                                                                     {section.title}
                                                                 </span> 
                                                             }
@@ -79,7 +79,7 @@ const StudentVisa = () => {
                                     {
                                         PageData.afterApplication.map((data) => (
                                             <div className="flex flex-col gap-8 lg:gap-10" key={data.id}>
-                                                <h3 className="swear-text text-28/34 lg:text-32/38 text-B500 capitalize">
+                                                <h3 className="swear-text text-2xl/28 lg:text-32/38 text-B500 capitalize">
                                                 {data.heading}
                                                 </h3>
                                                 {
@@ -92,13 +92,13 @@ const StudentVisa = () => {
                                     }
                                 </div>
                                 <div className="flex flex-col gap-8  p-5 lg:p-10 border border-B75 bg-white items-center justify-center">
-                                    <h3 className="swear-text text-28/34 lg:text-32/38 text-B400 text-center">
+                                    <h3 className="swear-text text-2xl/28 lg:text-32/38 text-B400 text-center">
                                         Ready to start your journey to study in the U.S.?
                                     </h3>
-                                    <p className="ibm-plex-sans-regular text-20/30 font-normal text-B400">
+                                    <p className="ibm-plex-sans-regular text-base lg:text-20/30 font-normal text-B400">
                                         Click the  
                                         <Link to="/form">
-                                            <span className="text-BL500 font-bold ibm-plex-sans-bold text-20/30 px-1">
+                                            <span className="text-BL500 font-bold ibm-plex-sans-bold text-base lg:text-20/30 px-1">
                                                 Get Started
                                             </span>
                                         </Link>
