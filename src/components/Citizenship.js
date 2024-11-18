@@ -13,10 +13,9 @@ const Citizenship = ({onPrev , onNext, selectedValue, onSelectionChange,}) => {
         <div className="w-full">
             <ScrollToTop />
             <NewsHeader 
-                title="Are you a US Citizen or permanent resident (Green Card holder)?" 
+            title="Are you a US Citizen or permanent resident (Green Card holder)?" 
             />
-
-            <div className="mt-10 lg:mt-16 mx-4 md:mx-8 lg:mx-28 2xl:max-w-screen-2xl lg:mx-auto">
+            <div className="mt-10 lg:mt-16">
                 <RadioGroup className="gap-4 lg:gap-6">
                     {
                         questions.citizenship.map((form) => (
@@ -45,7 +44,7 @@ const Citizenship = ({onPrev , onNext, selectedValue, onSelectionChange,}) => {
                                     />
                                 }
                                 label={
-                                    <Typography className=" ibm-plex-sans-regular !text-lg/20 lg:!text-20/24 !text-B500" >
+                                    <Typography className=" ibm-plex-sans-regular !text-base/20 lg:!text-20/24 !text-B500" >
                                         {form.label}
                                     </Typography>
                                 }
@@ -55,7 +54,7 @@ const Citizenship = ({onPrev , onNext, selectedValue, onSelectionChange,}) => {
                 </RadioGroup>
             </div>
 
-            <div className="flex flex-row items-center justify-center mt-8 lg:mt-10 mx-4 md:mx-8 lg:mx-28 2xl:max-w-screen-2xl lg:mx-auto gap-6">
+            <div className="flex flex-row items-center justify-center mt-8 lg:mt-10 gap-6">
                 <div className="w-full">
                     <div onClick={onPrev}><BtnBack title="back"/></div>
                 </div>

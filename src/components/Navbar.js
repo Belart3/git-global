@@ -1,4 +1,5 @@
 import Logo from "./Logo";
+import Hamburger from 'hamburger-react'
 import NavLink from "./NavLink";
 import {linkcont} from "../data/NavLinks"
 import BtnBlue from "./BtnBlue";
@@ -12,9 +13,14 @@ const Navbar = () => {
 
     const toggleDropDown = () => {
         setShowDropDown(!showDropDown);
+        console.log("clicked dropdown")
     };
+    const delayedToggle = () => {
+        setTimeout(toggleDropDown(), 500);
+    }
+
     return ( 
-        <nav className="flex flex-row justify-between items-center py-2 px-4 md:px-8  lg:px-20 max-w-screen-2xl 2xl:px-0 mx-auto fixed top-0 inset-x-0 z-50 bg-Background h-20">
+        <nav className="flex flex-row justify-between items-center py-2 px-5 md:px-8 lg:px-20 max-w-screen-2xl mx-auto fixed top-0 inset-x-0 z-40 bg-Background h-20">
 
             <Link to="/">
                 <Logo />
@@ -22,7 +28,7 @@ const Navbar = () => {
 
             <ul className="hidden items-center justify-center md:flex">
                     {linkcont.map((data) => (
-                        <NavLink src={data.src} key={data.id} title={data.title}  href={data.href} onToggle={toggleDropDown} />
+                        <NavLink src={data.src} key={data.id} title={data.title}  href={data.href} onClick={delayedToggle} />
                     ))}
             </ul> 
 
@@ -34,8 +40,8 @@ const Navbar = () => {
                 </div>
             </div>
 
-            <button className="h-12 w-12 bg-BL500 p-2 cursor-pointer sm:block md:hidden" onClick={toggleDropDown}>
-                <img src="images/menu-open.png" alt="" className="h-full w-full"/>
+            <button className="h-12 w-12 bg-BL500 cursor-pointer sm:block md:hidden flex items-center justify-center" onClick={toggleDropDown}>
+                <Hamburger color="#ffff" />
             </button>
 
             {showDropDown ? (

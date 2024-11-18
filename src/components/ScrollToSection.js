@@ -7,7 +7,7 @@ function ScrollToSection() {
   useEffect(() => {
     
     if (hash && hash.startsWith('#/')) {
-        const cleanHash = hash.replace('#/', '#'); // Convert '#/section' to '#section'
+        const cleanHash = hash.replace('#/', '#'); // Convert '#/url' to '#url'
         const element = document.querySelector(cleanHash);
         if (element) {
           element.scrollIntoView({ behavior: 'smooth' });

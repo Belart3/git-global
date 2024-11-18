@@ -1,4 +1,5 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
+import emailjs from '@emailjs/browser'
 import { Progress } from "antd";
 import FormStart from "../components/FormStart";
 import Citizenship from "../components/Citizenship";
@@ -18,11 +19,34 @@ const FormPage = ( ) => {
         address: '',
         contactMethod: '',
     })
+    const form = useRef();
+    const sendEmail = (e) => {
+        e.preventDefault()
+        const templateParams = {
+            citizenship: formData.citizenshipSelection,
+            service: formData.formServiceSelection,
+            name: formData.userName,
+            email: formData.userEmail,
+            phone: formData.phoneNumber,
+            address: formData.address,
+            contactMethod: formData.contactMethod,
+        };
+        emailjs.send(
+            'service_3mt1bv3',
+            'template_1ld5qg9',
+            templateParams,
+            '7oXabLpRDdIuOv6Pm'
+        ).then((response) => {
+            console.log('SUCCESS!', response.status, response.text);
+        }).catch((error) => {
+            console.log('FAILED...', error);
+        });
+    };
 
     const handleNextStep = () => {
         if( currentStep < totalSteps){
             setCurrentStep(currentStep + 1);
-        }   
+        }
     };
     const handlePrevStep = () => {
         if (currentStep > 1 ){
@@ -40,9 +64,9 @@ const FormPage = ( ) => {
     }, []);
 
     return(
-        <div className="w-full bg-Background ">
-            <div className="pt-[88px] lg:pt-36 max-w-screen-md md:mx-auto">
-                <div className="flex space-x-4 lg:space-x-6 mb-16 lg:mb-[100px] mx-4 md:mx-8 lg:mx-28 2xl:max-w-screen-2xl lg:mx-auto">
+        <div className="w-full bg-Background">
+            <div className="pt-[88px] lg:pt-36 mx-4 max-w-screen-md px-0 md:px-8 md:mx-auto">
+                <div className="flex space-x-4 lg:space-x-6 mb-16 lg:mb-[100px]">
                     <div className="flex-1">
                         <div className="relative h-full">
                             <Progress 
@@ -60,7 +84,7 @@ const FormPage = ( ) => {
                         </div>
                     </div>
                 </div>
-                <div className="w-full">
+                <form className="w-full" onSubmit={sendEmail} ref={form}>
                     {(() => {
                         switch (currentStep) {
                             case 1:
@@ -115,7 +139,7 @@ const FormPage = ( ) => {
                                 return null;
                         }
                     })()}
-                </div>
+                </form>
 
             </div>
         </div>

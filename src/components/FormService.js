@@ -15,13 +15,12 @@ const FormService = ({onPrev , onNext, selectedValue, onSelectionChange}) => {
             <NewsHeader 
                 title="Which service are you looking for?" 
             />
-
-            <div className="mt-10 lg:mt-16 mx-4 md:mx-8 lg:mx-28 2xl:max-w-screen-2xl lg:mx-auto">
+            <div className="mt-10 lg:mt-16">
                 <RadioGroup className="gap-4 lg:gap-6">
                     {
                         questions.service.map((form) => (
                             <Accordion 
-                                className={`!m-0 border border-B75 hover:shadow-lg !bg-white !shadow-none !rounded-none hover:!shadow-lg
+                                className={`!m-0 border border-B75 !bg-white !shadow-none !rounded-none hover:!shadow-lg
                                 ${
                                     selectedValue === form.value ? 'border-2 border-BL500 !shadow-lg hover:shadow-none' : 'border border-B75'
                                 }`}
@@ -61,7 +60,7 @@ const FormService = ({onPrev , onNext, selectedValue, onSelectionChange}) => {
                                     />
                                     }
                                 label={
-                                    <Typography className=" ibm-plex-sans-regular !text-lg/20 lg:!text-20/24 !text-B500" >
+                                    <Typography className=" ibm-plex-sans-regular !text-base/20 lg:!text-20/24 !text-B500" >
                                         {form.label}
                                     </Typography>
                                 }
@@ -69,7 +68,7 @@ const FormService = ({onPrev , onNext, selectedValue, onSelectionChange}) => {
                               </AccordionSummary>
                       
                               <AccordionDetails
-                              className='text-B500 text-base lg:text-lg ibm-plex-sans-regular bg-PE300 !p-5 lg:!p-10'
+                              className='text-B500 text-base lg:text-lg/27 ibm-plex-sans-regular bg-PE300 !p-5 lg:!p-10'
                               >
                                 {form.message}
                               </AccordionDetails>
@@ -80,7 +79,7 @@ const FormService = ({onPrev , onNext, selectedValue, onSelectionChange}) => {
                 </RadioGroup>
             </div>
 
-            <div className="flex flex-row items-center justify-center mt-8 lg:mt-10 mx-4 md:mx-8 lg:mx-28 2xl:max-w-screen-2xl lg:mx-auto gap-4 lg:gap-6">
+            <div className="flex flex-row items-center justify-center mt-8 lg:mt-10 gap-4 lg:gap-6">
                 <div className="w-full">
                     <div onClick={onPrev}>
                         <BtnBack title="back"/>
