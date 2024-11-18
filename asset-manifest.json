@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/git-global/static/css/main.3effa0b4.css",
-    "main.js": "/git-global/static/js/main.5a7af62d.js",
+    "main.css": "/git-global/static/css/main.e5a8a387.css",
+    "main.js": "/git-global/static/js/main.b503d184.js",
     "static/media/news-image-4.jpg": "/git-global/static/media/news-image-4.626adbb358e8bf113c77.jpg",
     "static/media/news-image-5.jpg": "/git-global/static/media/news-image-5.5de32fef7d5a0058a79f.jpg",
     "static/media/immigration.png": "/git-global/static/media/immigration.441e3bad75b2e0ab30c0.png",
@@ -15,11 +15,11 @@
     "static/media/hero-image-1.jpg": "/git-global/static/media/hero-image-1.38121a95753a1702c9ff.jpg",
     "static/media/hero-image-2.jpg": "/git-global/static/media/hero-image-2.91603f5262d9623ffec5.jpg",
     "index.html": "/git-global/index.html",
-    "main.3effa0b4.css.map": "/git-global/static/css/main.3effa0b4.css.map",
-    "main.5a7af62d.js.map": "/git-global/static/js/main.5a7af62d.js.map"
+    "main.e5a8a387.css.map": "/git-global/static/css/main.e5a8a387.css.map",
+    "main.b503d184.js.map": "/git-global/static/js/main.b503d184.js.map"
   },
   "entrypoints": [
-    "static/css/main.3effa0b4.css",
-    "static/js/main.5a7af62d.js"
+    "static/css/main.e5a8a387.css",
+    "static/js/main.b503d184.js"
   ]
 }
