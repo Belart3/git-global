@@ -72,10 +72,10 @@ const GuideToFamlyImmigration = () => {
                                     }
                                 </div> 
                                 <div className="flex flex-col gap-8  p-5 lg:p-10 border border-B75 bg-white items-center justify-center">
-                                    <h3 className="swear-text text-2xl/28 lg:text-32/38 text-B400 text-center">
+                                    <h3 className="swear-text text-2xl/28 lg:text-32/38 text-B400 text-start">
                                         Ready to start your family’s immigration process?
                                     </h3>
-                                    <p className="ibm-plex-sans-regular text-base lg:text-20/30 font-normal text-B400">
+                                    <p className="ibm-plex-sans-regular text-base lg:text-20/30 font-normal text-B400 text-start">
                                         Click the  
                                         <Link to="/form">
                                             <span className="text-BL500 font-bold ibm-plex-sans-bold text-base lg:text-20/30 px-1">
