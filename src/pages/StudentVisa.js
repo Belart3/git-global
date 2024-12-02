@@ -17,7 +17,7 @@ const StudentVisa = () => {
                 <div className="mx-4 md:mx-8 max-w-screen-lg lg:mx-auto px-0 lg:px-20 xl:px-0">
                     <NewsHeader 
                     title="How to Study in the U.S.: Your Guide to Getting a Student Visa"
-                    date="October 30, 2024"
+                    date="October 21, 2024"
                     subtitle="Step-by-Step Guide to Applying for a U.S. Student Visa"
                     />
                 </div>
@@ -92,13 +92,13 @@ const StudentVisa = () => {
                                     }
                                 </div>
                                 <div className="flex flex-col gap-8  p-5 lg:p-10 border border-B75 bg-white items-center justify-center">
-                                    <h3 className="swear-text text-2xl/28 lg:text-32/38 text-B400 text-start">
+                                    <h3 className="swear-text text-2xl/28 lg:text-32/38 text-B400 text-start lg:text-center">
                                         Ready to start your journey to study in the U.S.?
                                     </h3>
-                                    <p className="ibm-plex-sans-regular text-base lg:text-20/30 font-normal text-B400 text-start">
+                                    <p className="ibm-plex-sans-regular text-base lg:text-20/30 font-normal text-B400 text-start lg:text-center">
                                         Click the  
                                         <Link to="/form">
-                                            <span className="text-BL500 font-bold ibm-plex-sans-bold text-base lg:text-20/30 px-1 text-start">
+                                            <span className="text-BL500 font-bold ibm-plex-sans-bold text-base lg:text-20/30 px-1">
                                                 Get Started
                                             </span>
                                         </Link>
@@ -108,7 +108,7 @@ const StudentVisa = () => {
                             </div>
                         </div>
                     </div>
-                    <section className="flex flex-col mx-4 md:mx-8 lg:mx-20 max-w-screen-2xl 2xl:px-0 2xl:mx-auto gap-y-10 xl-gap-16">
+                    <section className="flex flex-col mx-4 md:mx-8 lg:mx-20 max-w-screen-2xl 2xl:px-20 2xl:mx-auto gap-y-10 xl-gap-16">
                         <SectionHeading title="other News & Reports" src="images/notification.svg"/>
                         <News 
                         currentPage={currentPage}
