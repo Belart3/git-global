@@ -61,7 +61,7 @@ const Footer = () => {
                                 {
                                     footerData.contactInfo.map((data) => (
                                         <div className="flex flex-row items-center gap-3 justify-start" key={data.id}>
-                                            <a href={data.href} className="flex flex-row items-center gap-3 justify-start">
+                                            <a href={data.href} className="flex flex-row items-center gap-3 justify-start" target="_blank" rel="noopener noreferrer">
                                                 <img src={data.image} alt="" className="size-5"/>
                                                 <p className="text-white ibm-plex-sans-regular text-sm/5">
                                                     {data.text}
