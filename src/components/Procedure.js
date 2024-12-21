@@ -10,7 +10,7 @@ const Procedure = ({id,heading,paragraph}) => {
                 <h5 className="ibm-plex-sans-semibold text-B500 text-base lg:text-20/30">
                     {heading}
                 </h5>
-                <p className="text-sm/5 lg:text-sm/5 text-B400 ibm-plex-sans-regular">
+                <p className="text-sm/5 lg:text-base text-B400 ibm-plex-sans-regular">
                     {paragraph}
                 </p>
             </div>

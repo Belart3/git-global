@@ -17,7 +17,7 @@ const TrumpAndImmigration = () => {
                 <div className="mx-4 md:mx-8 max-w-screen-lg lg:mx-auto px-0 lg:px-20 xl:px-0">
                     <NewsHeader 
                     title="Trump’s Victory and the Future of U.S. Immigration: What You Need to Know"
-                    date="October 30, 2024"
+                    date="November 11, 2024"
                     subtitle=" Arising questions about the future of U.S. immigration policy"
                     />
                 </div>
@@ -85,10 +85,10 @@ const TrumpAndImmigration = () => {
                                     }
                                 </div>
                                 <div className="flex flex-col gap-8  p-5 lg:p-10 border border-B75 bg-white items-center justify-center">
-                                    <h3 className="swear-text text-2xl/28 lg:text-32/38 text-B400 text-center">
+                                    <h3 className="swear-text text-2xl/28 lg:text-32/38 text-B400 text-start lg:text-center">
                                         Need assistance with your immigration case?
                                     </h3>
-                                    <p className="ibm-plex-sans-regular text-base lg:text-20/30 font-normal text-B400">
+                                    <p className="ibm-plex-sans-regular text-base lg:text-20/30 font-normal text-B400 text-start lg:text-center">
                                         Click the  
                                         <Link to="/form">
                                             <span className="text-BL500 font-bold ibm-plex-sans-bold text-base lg:text-20/30 px-1">
@@ -101,7 +101,7 @@ const TrumpAndImmigration = () => {
                             </div>
                         </div>
                     </div>
-                    <section className="flex flex-col mx-4 md:mx-8 lg:mx-20 max-w-screen-2xl 2xl:px-0 2xl:mx-auto gap-y-10 xl-gap-16">
+                    <section className="flex flex-col mx-4 md:mx-8 lg:mx-20 max-w-screen-2xl 2xl:px-20 2xl:mx-auto gap-y-10 xl-gap-16">
                         <SectionHeading title="other News & Reports" src="images/notification.svg"/>
                         <News 
                         currentPage={currentPage}

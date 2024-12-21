@@ -9,7 +9,7 @@ import { useEffect } from 'react';
 
 const Home = () => {
     useEffect(() => {
-        document.title = 'GIT Global';
+        document.title = 'Simplified U.S. Immigration Services | GIT Global';
     }, []);
     return (  
         <div className="w-full bg-Background">

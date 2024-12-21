@@ -32,7 +32,7 @@ export const footerData = {
             id: 1,
             image: 'images/office.svg',
             text: '2 E. Benton St, Iowa City, IA, 52240',
-            href: '',
+            href: 'https://maps.app.goo.gl/wJFaM49UjfzfVcVR7',
         },
         {
             id: 2,
