@@ -33,7 +33,7 @@ const FinalForm = ({onNext, onPrev, selectedMethod, onSelectionChange}) => {
 
     const handleRedirect = () => {
         setTimeout(() => {
-            window.location.href = '/git-global/';
+            window.location.href = '/';
         }, 1000); 
     };
     return(

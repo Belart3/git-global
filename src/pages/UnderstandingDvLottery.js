@@ -16,9 +16,9 @@ const UnderstandindDvLottery = ( ) => {
             <div className="flex flex-col gap-10 lg:gap-16">
                 <div className="mx-4 md:mx-8 max-w-screen-lg lg:mx-auto px-0 lg:px-20 xl:px-0">
                     <NewsHeader 
-                    title="How to Study in the U.S.: Your Guide to Getting a Student Visa"
+                    title="How to Win a U.S. Green Card: Understanding the DV Lottery"
                     date="October 14, 2024"
-                    subtitle="Step-by-Step Guide to Applying for a U.S. Student Visa"
+                    subtitle="How to Apply for the DV Lottery"
                     />
                 </div>
                 <div className="">

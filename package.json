@@ -1,7 +1,7 @@
 {
   "name": "git-global",
   "version": "0.1.0",
-  "homepage": "https://belart3.github.io/git-global",
+  "homepage": "https://gitsiowa.com",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
