@@ -6,6 +6,7 @@ import Citizenship from "../components/Citizenship";
 import FormService from "../components/FormService";
 import UserData from "../components/UserData";
 import FinalForm from "../components/FinalForm";
+import GhlForm from "../components/GhlForm";
 
 const FormPage = ( ) => {
     const totalSteps = 5;
@@ -21,26 +22,26 @@ const FormPage = ( ) => {
     })
     const form = useRef();
     const sendEmail = (e) => {
-        e.preventDefault()
-        const templateParams = {
-            citizenship: formData.citizenshipSelection,
-            service: formData.formServiceSelection,
-            name: formData.userName,
-            email: formData.userEmail,
-            phone: formData.phoneNumber,
-            address: formData.address,
-            contactMethod: formData.contactMethod,
-        };
-        emailjs.send(
-            'service_3mt1bv3',
-            'template_1ld5qg9',
-            templateParams,
-            '7oXabLpRDdIuOv6Pm'
-        ).then((response) => {
-            console.log('SUCCESS!', response.status, response.text);
-        }).catch((error) => {
-            console.log('FAILED...', error);
-        });
+        // e.preventDefault()
+        // const templateParams = {
+        //     citizenship: formData.citizenshipSelection,
+        //     service: formData.formServiceSelection,
+        //     name: formData.userName,
+        //     email: formData.userEmail,
+        //     phone: formData.phoneNumber,
+        //     address: formData.address,
+        //     contactMethod: formData.contactMethod,
+        // };
+        // emailjs.send(
+        //     'service_3mt1bv3',
+        //     'template_1ld5qg9',
+        //     templateParams,
+        //     '7oXabLpRDdIuOv6Pm'
+        // ).then((response) => {
+        //     console.log('SUCCESS!', response.status, response.text);
+        // }).catch((error) => {
+        //     console.log('FAILED...', error);
+        // });
     };
 
     const handleNextStep = () => {
@@ -109,30 +110,37 @@ const FormPage = ( ) => {
                                         onSelectionChange={(value) => updateFormData('formServiceSelection', value)}
                                     /> 
                                 )
+                            // case 4:
+                            //     return (
+                            //         <UserData 
+                            //             onPrev={handlePrevStep} 
+                            //             onNext={handleNextStep}
+                            //             formData={formData}
+                            //             setFormData={setFormData}
+                            //             userName={formData.userName}
+                            //             userEmail={formData.userEmail}
+                            //             phoneNumber={formData.phoneNumber}
+                            //             address={formData.address}
+                            //             onNameChange={(value) => updateFormData('userName', value)}
+                            //             onEmailChange={(value) => updateFormData('userEmail', value)}
+                            //             onPhoneChange={(value) => updateFormData('phoneNumber', value)}
+                            //             onAddressChange={(value) => updateFormData('address', value)}
+                            //         />
+                            //     )
                             case 4:
-                                return (
-                                    <UserData 
-                                        onPrev={handlePrevStep} 
-                                        onNext={handleNextStep}
-                                        formData={formData}
-                                        setFormData={setFormData}
-                                        userName={formData.userName}
-                                        userEmail={formData.userEmail}
-                                        phoneNumber={formData.phoneNumber}
-                                        address={formData.address}
-                                        onNameChange={(value) => updateFormData('userName', value)}
-                                        onEmailChange={(value) => updateFormData('userEmail', value)}
-                                        onPhoneChange={(value) => updateFormData('phoneNumber', value)}
-                                        onAddressChange={(value) => updateFormData('address', value)}
-                                    />
-                                )
-                            case 5:
                                 return (
                                     <FinalForm
                                         onPrev={handlePrevStep} 
                                         onNext={handleNextStep}
                                         selectedMethod={formData.contactMethod}
                                         onSelectionChange={(value) => updateFormData('contactMethod', value)}
+                                    />
+                            )
+                            case 5:
+                                return (
+                                    <GhlForm 
+                                    onPrev={handlePrevStep}
+                                    onNext={handleNextStep}
                                     />
                             )
                             default:
