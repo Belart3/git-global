@@ -90,26 +90,12 @@ const FinalForm = ({onNext, onPrev, selectedMethod, onSelectionChange}) => {
                             <div onClick={onPrev}><BtnBack title="back"/></div>
                         </div>
                         <div className="w-full">
-                            <div onClick={onNext} >
-                                {
-                                    selectedMethod === 'I would like to request a call' 
-                                    ?   
-                                    <div onClick={showMessage}>
-                                        <BtnNext title="submit"  disabled={!selectedMethod} />
-                                    </div>
-                                    : selectedMethod === 'I would like to schedule a consultation' 
-                                    ? 
-                                    <div  onClick={consultation}>
-                                        <BtnNext title="schedule now"  disabled={!selectedMethod} type="submit"/>
-                                    </div> 
-                                    : 
-                                    <BtnNext title="next"  disabled={!selectedMethod} /> 
-                                }  
-                            </div>
+                            <div onClick={onNext} ><BtnNext title="next"/></div>
                         </div>
                     </div>
                 </div>
             </div>
+            {/* congratulatory message */}
             {
                 message ? 
                 <div className=" h-screen w-screen fixed top-0 left-0 flex flex-col items-center justify-center bg-black bg-opacity-50 z-50 ">
