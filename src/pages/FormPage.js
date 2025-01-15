@@ -84,6 +84,7 @@ const FormPage = ( ) => {
                                 <div className="bg-Background h-full w-4 lg:w-6"></div>
                                 <div className="bg-Background h-full w-4 lg:w-6"></div>
                                 <div className="bg-Background h-full w-4 lg:w-6"></div>
+                                <div className="bg-Background h-full w-4 lg:w-6"></div>
                             </div>
                         </div>
                     </div>
