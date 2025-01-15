@@ -25,7 +25,7 @@ const GhlForm = ({onNext , onPrev, sendEmail}) => {
         setLoading(true);
         setError("")
         console.log(validEmail)
-        fetch(`http://localhost:5000/api/user?email=${validEmail}`)
+        fetch(`https://git-global.vercel.app/api/user?email=${validEmail}`)
         .then((res) => {
             if(!res.ok){
                 throw new Error("User not found")
