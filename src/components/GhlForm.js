@@ -24,7 +24,6 @@ const GhlForm = ({onNext , onPrev, sendEmail}) => {
         e.preventDefault()
         setLoading(true);
         setError("")
-        console.log(validEmail)
         fetch(`https://git-global.vercel.app/api/user?email=${validEmail}`)
         .then((res) => {
             if(!res.ok){

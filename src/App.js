@@ -12,6 +12,7 @@ import UnderstandingDvLottery from './pages/UnderstandingDvLottery';
 import StudentVisa from './pages/StudentVisa';
 import TrumpAndImmigration from './pages/TrumpAndImmigration';
 import K1Fiance from './pages/K1Fiance';
+import NotFound from './components/NotFound';
 
 
 function App() {
@@ -52,7 +53,9 @@ function App() {
             <Route path="/form">
               <FormPage />
             </Route>
-
+            <Route path="*" >
+              <NotFound />
+            </Route>
           </Switch>
         </div>
         <Footer />

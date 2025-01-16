@@ -13,7 +13,6 @@ const Navbar = () => {
 
     const toggleDropDown = () => {
         setShowDropDown(!showDropDown);
-        console.log("clicked dropdown")
     };
     const delayedToggle = () => {
         setTimeout(toggleDropDown(), 500);

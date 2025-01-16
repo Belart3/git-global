@@ -53,8 +53,6 @@ const UserData = ({onNext, onPrev, userName, userEmail ,phoneNumber , address, s
                         label="Full Name (First name then last name)"
                         value={userName}
                         onChange={handleInputChange('userName')}
-                        onFocus={() => console.log()}
-                        onBlur={() => console.log()}
                     />
                     <EmailInputComponent 
                         id="userEmail"
@@ -74,8 +72,6 @@ const UserData = ({onNext, onPrev, userName, userEmail ,phoneNumber , address, s
                         label="Phone Number"
                         value={phoneNumber}
                         onChange={handleNumberChange}
-                        onFocus={() => console.log()}
-                        onBlur={() => console.log()}
                     />
                     <FormInput 
                         id="address"
@@ -83,8 +79,6 @@ const UserData = ({onNext, onPrev, userName, userEmail ,phoneNumber , address, s
                         label="Address"
                         value={address}
                         onChange={handleInputChange('address')}
-                        onFocus={() => console.log()}
-                        onBlur={() => console.log()}
                     />
                 </div>
             </div>
