@@ -53,7 +53,7 @@ function App() {
             <Route path="/form">
               <FormPage />
             </Route>
-            <Route path="*" >
+            <Route  path="*" >
               <NotFound />
             </Route>
           </Switch>
