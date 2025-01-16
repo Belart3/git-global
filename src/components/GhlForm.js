@@ -24,7 +24,7 @@ const GhlForm = ({onNext , onPrev, sendEmail}) => {
         e.preventDefault()
         setLoading(true);
         setError("")
-        fetch(`/api/user?email=${validEmail}`)
+        fetch(`https://git-backend.vercel.app/api/user?email=${validEmail}`)
         .then((res) => {
             if(!res.ok){
                 throw new Error("User not found")
@@ -38,7 +38,7 @@ const GhlForm = ({onNext , onPrev, sendEmail}) => {
         })
         .catch((err) => {
             setError(err.message)
-            toast(err.message)
+            toast('user not found')
             setUserData(null)
             setLoading(false)
         })
