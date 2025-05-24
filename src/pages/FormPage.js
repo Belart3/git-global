@@ -6,10 +6,9 @@ import Citizenship from "../components/Citizenship";
 import FormService from "../components/FormService";
 import UserData from "../components/UserData";
 import FinalForm from "../components/FinalForm";
-import GhlForm from "../components/GhlForm";
 
 const FormPage = ( ) => {
-    const totalSteps = 6;
+    const totalSteps = 5;
     const [currentStep, setCurrentStep] = useState(1);
     const [formData , setFormData] = useState({
         citizenshipSelection: '',
@@ -84,7 +83,6 @@ const FormPage = ( ) => {
                                 <div className="bg-Background h-full w-4 lg:w-6"></div>
                                 <div className="bg-Background h-full w-4 lg:w-6"></div>
                                 <div className="bg-Background h-full w-4 lg:w-6"></div>
-                                <div className="bg-Background h-full w-4 lg:w-6"></div>
                             </div>
                         </div>
                     </div>
@@ -138,14 +136,6 @@ const FormPage = ( ) => {
                                         onNext={handleNextStep}
                                         selectedMethod={formData.contactMethod}
                                         onSelectionChange={(value) => updateFormData('contactMethod', value)}
-                                    />
-                            )
-                            case 6:
-                                return (
-                                    <GhlForm 
-                                    onPrev={handlePrevStep}
-                                    onNext={handleNextStep}
-                                    sendEmail={sendEmail}
                                     />
                             )
                             default:

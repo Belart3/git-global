@@ -63,7 +63,7 @@ const GhlForm = ({onNext , onPrev, sendEmail}) => {
     <div className='w-full'>
         <ScrollToTop />
         <NewsHeader 
-        title="Fill out the form below to schedule a consultation"
+        title="Now that we have your information, how can we help?"
         />
         <div className="mt-10 lg:mt-16 w-full">
             <EmbeddedFrame />

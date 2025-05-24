@@ -13,6 +13,7 @@ import StudentVisa from './pages/StudentVisa';
 import TrumpAndImmigration from './pages/TrumpAndImmigration';
 import K1Fiance from './pages/K1Fiance';
 import NotFound from './components/NotFound';
+import PrivacyPolicy from './pages/PrivacyPolicy'
 
 
 function App() {
@@ -52,6 +53,9 @@ function App() {
             {/* path to the form page */}
             <Route path="/form">
               <FormPage />
+            </Route>
+            <Route path="/privacy-policy">
+              <PrivacyPolicy />
             </Route>
             <Route  path="*" >
               <NotFound />
