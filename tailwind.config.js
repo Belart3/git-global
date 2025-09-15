@@ -121,6 +121,7 @@ module.exports = {
         'news-3': "url(img/news-image-3.jpg)",
         'news-4': "url(img/news-image-4.jpg)",
         'news-5': "url(img/news-image-5.jpg)",
+        '404': "url(img/404.png)",
       },
       keyframes: {
         horizontal: {

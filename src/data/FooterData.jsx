@@ -20,6 +20,11 @@ export const footerData = {
             title: 'news & reports',
             href: '/#news-report'
         },
+        {
+            id: 5,
+            title: 'privacy policy',
+            href: '/privacy-policy'
+        }
     ],
     footerDetail: [
         {

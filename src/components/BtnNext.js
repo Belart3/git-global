@@ -3,7 +3,7 @@ const BtnNext = ({title, disabled, type }) => {
         <button 
             type={type}
             disabled={disabled} 
-            className={`border p-4 flex flex-row items-center justify-center space-x-3 w-full group inline-flex ${
+            className={`border p-4 flex-row items-center justify-center space-x-3 w-full group inline-flex ${
                 disabled 
                     ? 'bg-BL100 cursor-not-allowed' 
                     : 'border-BL500 bg-BL500 cursor-pointer lg:hover:scale-90 transition duration-500 ease-in-out'
