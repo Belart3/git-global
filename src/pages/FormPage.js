@@ -6,6 +6,7 @@ import Citizenship from "../components/Citizenship";
 import FormService from "../components/FormService";
 import UserData from "../components/UserData";
 import FinalForm from "../components/FinalForm";
+import { Helmet } from "react-helmet";
 
 const FormPage = ( ) => {
     const totalSteps = 5;
@@ -67,85 +68,95 @@ const FormPage = ( ) => {
     }, []);
 
     return(
-        <div className="w-full bg-Background">
-            <div className="pt-[88px] lg:pt-36 mx-4 max-w-screen-md px-0 md:px-8 md:mx-auto">
-                <div className="flex space-x-4 lg:space-x-6 mb-16 lg:mb-[100px]">
-                    <div className="flex-1">
-                        <div className="relative h-full">
-                            <Progress 
-                                percent={currentStep / totalSteps * 100}
-                                strokeColor="#001F3D"
-                                showInfo={false}
-                                strokeWidth="4px"
-                            />
-                            <div className="absolute top-0 left-0 h-full w-full flex items-center justify-evenly gap-4">
-                                <div className="bg-Background h-full w-4 lg:w-6"></div>
-                                <div className="bg-Background h-full w-4 lg:w-6"></div>
-                                <div className="bg-Background h-full w-4 lg:w-6"></div>
-                                <div className="bg-Background h-full w-4 lg:w-6"></div>
+        <>
+            <Helmet>
+                <title>Immigration Consultation Form | GIT Global</title>
+                <meta
+                name="description"
+                content="Complete our immigration consultation form at GIT Global, Iowa’s trusted US immigration consultants. Get expert guidance on visas, green cards, and more"
+                />
+                <link rel="canonical" href="https://gitsiowa.com/form" />
+            </Helmet>
+            <div className="w-full bg-Background">
+                <div className="pt-[88px] lg:pt-36 mx-4 max-w-screen-md px-0 md:px-8 md:mx-auto">
+                    <div className="flex space-x-4 lg:space-x-6 mb-16 lg:mb-[100px]">
+                        <div className="flex-1">
+                            <div className="relative h-full">
+                                <Progress 
+                                    percent={currentStep / totalSteps * 100}
+                                    strokeColor="#001F3D"
+                                    showInfo={false}
+                                    strokeWidth="4px"
+                                />
+                                <div className="absolute top-0 left-0 h-full w-full flex items-center justify-evenly gap-4">
+                                    <div className="bg-Background h-full w-4 lg:w-6"></div>
+                                    <div className="bg-Background h-full w-4 lg:w-6"></div>
+                                    <div className="bg-Background h-full w-4 lg:w-6"></div>
+                                    <div className="bg-Background h-full w-4 lg:w-6"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <form className="w-full" onSubmit={sendEmail} ref={form}>
-                    {(() => {
-                        switch (currentStep) {
-                            case 1:
-                                return <FormStart onNext={handleNextStep}/>;
-                            case 2:
-                                return (
-                                    <Citizenship 
-                                        // function for the back button                                    
-                                        onPrev={handlePrevStep} 
-                                        //function for the next button
-                                        onNext={handleNextStep} 
-                                        selectedValue={formData.citizenshipSelection}
-                                        onSelectionChange={(value) => updateFormData('citizenshipSelection', value)}
-                                    />
+                    <form className="w-full" onSubmit={sendEmail} ref={form}>
+                        {(() => {
+                            switch (currentStep) {
+                                case 1:
+                                    return <FormStart onNext={handleNextStep}/>;
+                                case 2:
+                                    return (
+                                        <Citizenship 
+                                            // function for the back button                                    
+                                            onPrev={handlePrevStep} 
+                                            //function for the next button
+                                            onNext={handleNextStep} 
+                                            selectedValue={formData.citizenshipSelection}
+                                            onSelectionChange={(value) => updateFormData('citizenshipSelection', value)}
+                                        />
+                                    )
+                                case 3:
+                                    return (
+                                        <FormService 
+                                            onPrev={handlePrevStep} 
+                                            onNext={handleNextStep} 
+                                            selectedValue={formData.formServiceSelection}
+                                            onSelectionChange={(value) => updateFormData('formServiceSelection', value)}
+                                        /> 
+                                    )
+                                case 4:
+                                    return (
+                                        <UserData 
+                                            onPrev={handlePrevStep} 
+                                            onNext={handleNextStep}
+                                            formData={formData}
+                                            setFormData={setFormData}
+                                            userName={formData.userName}
+                                            userEmail={formData.userEmail}
+                                            phoneNumber={formData.phoneNumber}
+                                            address={formData.address}
+                                            onNameChange={(value) => updateFormData('userName', value)}
+                                            onEmailChange={(value) => updateFormData('userEmail', value)}
+                                            onPhoneChange={(value) => updateFormData('phoneNumber', value)}
+                                            onAddressChange={(value) => updateFormData('address', value)}
+                                        />
+                                    )
+                                case 5:
+                                    return (
+                                        <FinalForm
+                                            onPrev={handlePrevStep} 
+                                            onNext={handleNextStep}
+                                            selectedMethod={formData.contactMethod}
+                                            onSelectionChange={(value) => updateFormData('contactMethod', value)}
+                                        />
                                 )
-                            case 3:
-                                return (
-                                    <FormService 
-                                        onPrev={handlePrevStep} 
-                                        onNext={handleNextStep} 
-                                        selectedValue={formData.formServiceSelection}
-                                        onSelectionChange={(value) => updateFormData('formServiceSelection', value)}
-                                    /> 
-                                )
-                            case 4:
-                                return (
-                                    <UserData 
-                                        onPrev={handlePrevStep} 
-                                        onNext={handleNextStep}
-                                        formData={formData}
-                                        setFormData={setFormData}
-                                        userName={formData.userName}
-                                        userEmail={formData.userEmail}
-                                        phoneNumber={formData.phoneNumber}
-                                        address={formData.address}
-                                        onNameChange={(value) => updateFormData('userName', value)}
-                                        onEmailChange={(value) => updateFormData('userEmail', value)}
-                                        onPhoneChange={(value) => updateFormData('phoneNumber', value)}
-                                        onAddressChange={(value) => updateFormData('address', value)}
-                                    />
-                                )
-                            case 5:
-                                return (
-                                    <FinalForm
-                                        onPrev={handlePrevStep} 
-                                        onNext={handleNextStep}
-                                        selectedMethod={formData.contactMethod}
-                                        onSelectionChange={(value) => updateFormData('contactMethod', value)}
-                                    />
-                            )
-                            default:
-                                return null;
-                        }
-                    })()}
-                </form>
+                                default:
+                                    return null;
+                            }
+                        })()}
+                    </form>
 
+                </div>
             </div>
-        </div>
+        </>
     )
 }
 

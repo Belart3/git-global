@@ -4,15 +4,21 @@ import SectionHeading from '../components/SectionHeading'
 import { PageData } from "../data/TrumpAndImmigration";
 import NewsIntroduction from "../components/NewsIntrodction";
 import { Link } from "react-router-dom/cjs/react-router-dom";
-import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 
 const TrumpAndImmigration = () => {
     const currentPage = 4;
-    useEffect(() => {
-        document.title = 'GIT Global -  Arising questions about the future of U.S. immigration policy';
-    }, []);
     return (  
-        <div className="w-full bg-Background pt-[88px] lg:pt-36">
+        <>
+            <Helmet>
+                <title>How Trump’s Victory Shapes the Future of U.S. Immigration | GIT Global</title>
+                <meta
+                name="description"
+                content="How will Trump’s victory affect U.S. immigration? GITS explains potential policy changes, visa impacts, and what immigrants and families need to know."
+                />
+                <link rel="canonical" href="https://gitsiowa.com/trumps-victory-and-the-future-of-u-s-immigration-what-you-need-to-know" />
+            </Helmet>
+            <div className="w-full bg-Background pt-[88px] lg:pt-36">
             <div className="flex flex-col gap-10 lg:gap-16">
                 <div className="mx-4 md:mx-8 max-w-screen-lg lg:mx-auto px-0 lg:px-20 xl:px-0">
                     <NewsHeader 
@@ -110,7 +116,8 @@ const TrumpAndImmigration = () => {
                 </div>
             </div>
 
-        </div>
+            </div>
+        </>
     );
 }
  
