@@ -27,7 +27,7 @@ const Footer = () => {
                         </p>
                     </div>
 
-                    <div className="flex flex-col gap-10  w-full lg:w-5/12">
+                    <div className="flex flex-col gap-10  w-full lg:w-3/12">
                         {footerData.footerDetail.map((data) => (
                             <p className="text-white ibm-plex-sans-regular text-sm/5" key={data.id}>
                                 {data.text}
@@ -70,6 +70,43 @@ const Footer = () => {
                                         </div>
                                     ))
                                 }
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="flex flex-col  w-full lg:w-3/12 gap-4">
+                        <div className="flex flex-col">
+                            <h5 className="capitalize text-B100 ibm-plex-sans-regular">
+                                Working Hours
+                            </h5>
+                        </div>
+
+                        <div className="flex flex-col">
+                            <div className="flex flex-col w-full">
+                                <div className="flex flex-row justify-between items-center w-full border-b border-white py-3 px-5">
+                                    <p className="text-white ibm-plex-sans-regular text-sm/5">
+                                        Mon - Thur
+                                    </p>
+                                    <p className="text-white ibm-plex-sans-regular text-sm/5">
+                                        9am - 5pm
+                                    </p>
+                                </div>
+                                <div className="flex flex-row justify-between items-center w-full border-b border-white py-3 px-5">
+                                    <p className="text-white ibm-plex-sans-regular text-sm/5">
+                                        Fri & Sat
+                                    </p>
+                                    <p className="text-white ibm-plex-sans-regular text-sm/5">
+                                        By Appointment Only
+                                    </p>
+                                </div>
+                                <div className="flex flex-row justify-between items-center w-full py-3 px-5">
+                                    <p className="text-white ibm-plex-sans-regular text-sm/5">
+                                        Sunday
+                                    </p>
+                                    <p className="text-white ibm-plex-sans-regular text-sm/5">
+                                        Closed
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
